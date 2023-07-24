@@ -1,11 +1,111 @@
-[gd_scene load_steps=3 format=3 uid="uid://p6eenj0m0n16"]
+[gd_scene load_steps=17 format=3 uid="uid://p6eenj0m0n16"]
 
 [ext_resource type="Script" path="res://Gladiator/gladiator.gd" id="1_00vet"]
+[ext_resource type="Texture2D" uid="uid://rak0j88py2t4" path="res://Assets/test sprites/Character-idle.png" id="2_mkow0"]
+[ext_resource type="Texture2D" uid="uid://b6er01hvgkngi" path="res://Assets/test sprites/Character-walk.png" id="3_ugyjc"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rqygn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3hm72"]
+atlas = ExtResource("2_mkow0")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40kiw"]
+atlas = ExtResource("2_mkow0")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jsvt3"]
+atlas = ExtResource("2_mkow0")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wmma"]
+atlas = ExtResource("2_mkow0")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bygjy"]
+atlas = ExtResource("3_ugyjc")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hpd4t"]
+atlas = ExtResource("3_ugyjc")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v70w5"]
+atlas = ExtResource("3_ugyjc")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gteyg"]
+atlas = ExtResource("3_ugyjc")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yl8v2"]
+atlas = ExtResource("3_ugyjc")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s68um"]
+atlas = ExtResource("3_ugyjc")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_il0pa"]
+atlas = ExtResource("3_ugyjc")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mv1rx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3hm72")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_40kiw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jsvt3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2wmma")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bygjy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hpd4t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v70w5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gteyg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yl8v2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s68um")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_il0pa")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
 
 [node name="Gladiator" type="CharacterBody2D"]
 script = ExtResource("1_00vet")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_rqygn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(14, 1)
+sprite_frames = SubResource("SpriteFrames_mv1rx")
+animation = &"Run"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
