@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://p6eenj0m0n16"]
+
+[ext_resource type="Script" path="res://Gladiator/gladiator.gd" id="1_00vet"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rqygn"]
+
+[node name="Gladiator" type="CharacterBody2D"]
+script = ExtResource("1_00vet")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_rqygn")

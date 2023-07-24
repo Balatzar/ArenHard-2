@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cobv12mivkn5h"]
+
+[ext_resource type="PackedScene" uid="uid://p6eenj0m0n16" path="res://Gladiator/gladiator.tscn" id="1_mwkw6"]
+
+[node name="FirstArena" type="Node2D"]
+
+[node name="Gladiator" parent="." instance=ExtResource("1_mwkw6")]
+position = Vector2(404, 159)
