@@ -1,71 +1,115 @@
-[gd_scene load_steps=16 format=3 uid="uid://p6eenj0m0n16"]
+[gd_scene load_steps=26 format=3 uid="uid://p6eenj0m0n16"]
 
 [ext_resource type="Script" path="res://Gladiator/gladiator.gd" id="1_00vet"]
-[ext_resource type="Texture2D" uid="uid://cgcufqkdegi8w" path="res://Assets/Tests/District/Characters/Hero/Swordsman_Idle/Swordsman0000.png" id="2_faqba"]
-[ext_resource type="Texture2D" uid="uid://biav7is31yigr" path="res://Assets/Tests/District/Characters/Hero/Swordsman_Idle/Swordsman0001.png" id="3_vae8i"]
-[ext_resource type="Texture2D" uid="uid://dyawgr2fbu8so" path="res://Assets/Tests/District/Characters/Hero/Swordsman_Idle/Swordsman0002.png" id="4_6asav"]
-[ext_resource type="Texture2D" uid="uid://cxvaj3r6mbfo2" path="res://Assets/Tests/District/Characters/Hero/Swordsman_Idle/Swordsman0003.png" id="5_eyjb3"]
-[ext_resource type="Texture2D" uid="uid://b3q8cnolpcvnc" path="res://Assets/Tests/District/Characters/Hero/Swordsman_Run/hero-running-separated2.png" id="6_n7s6j"]
-[ext_resource type="Texture2D" uid="uid://bhpnvdrida3ed" path="res://Assets/Tests/District/Characters/Hero/Swordsman_Run/hero-running-separated3.png" id="7_5a4t0"]
-[ext_resource type="Texture2D" uid="uid://8117hq7jc1pv" path="res://Assets/Tests/District/Characters/Hero/Swordsman_Run/hero-running-separated4.png" id="8_sax7f"]
-[ext_resource type="Texture2D" uid="uid://d02pg5f4ipj0c" path="res://Assets/Tests/District/Characters/Hero/Swordsman_Run/hero-running-separated5.png" id="9_0mslx"]
-[ext_resource type="Texture2D" uid="uid://b0v3nicliaa5b" path="res://Assets/Tests/District/Characters/Hero/Swordsman_Run/hero-running-separated6.png" id="10_bb1ae"]
-[ext_resource type="Texture2D" uid="uid://cb5se6btm5n7y" path="res://Assets/Tests/District/Characters/Hero/Swordsman_Run/hero-running-separated7.png" id="11_xu5ce"]
-[ext_resource type="Texture2D" uid="uid://84u2fxjc5bxk" path="res://Assets/Tests/District/Characters/Hero/Swordsman_Run/hero-running-separated8.png" id="12_ammj6"]
-[ext_resource type="Texture2D" uid="uid://b2pnwbskfsbga" path="res://Assets/Tests/District/Characters/Hero/Swordsman_Run/hero-running-separated9.png" id="13_28okk"]
+[ext_resource type="Texture2D" uid="uid://clhi3qfaa5oeu" path="res://Assets/Tests/test stick/run no arm/run_noarm_01.png" id="8_ua64k"]
+[ext_resource type="Texture2D" uid="uid://c2ew7rbcjl22s" path="res://Assets/Tests/test stick/run no arm/run_noarm_02.png" id="9_midgu"]
+[ext_resource type="Texture2D" uid="uid://ugmyiomqf0ss" path="res://Assets/Tests/test stick/run no arm/run_noarm_03.png" id="10_eh1uv"]
+[ext_resource type="Texture2D" uid="uid://ura8s03fueep" path="res://Assets/Tests/test stick/run no arm/run_noarm_04.png" id="11_r5wqs"]
+[ext_resource type="Texture2D" uid="uid://cseps4vaivjiw" path="res://Assets/Tests/test stick/run no arm/run_noarm_05.png" id="12_4k8ga"]
+[ext_resource type="Texture2D" uid="uid://4gcojjwud2r6" path="res://Assets/Tests/test stick/run no arm/run_noarm_06.png" id="13_vm8vg"]
+[ext_resource type="Texture2D" uid="uid://4ws1wmf5g0kv" path="res://Assets/Tests/test stick/run no arm/run_noarm_07.png" id="14_wmnnt"]
+[ext_resource type="Texture2D" uid="uid://d4f0i1xo8x4ah" path="res://Assets/Tests/test stick/run no arm/run_noarm_08.png" id="15_6it3c"]
+[ext_resource type="Texture2D" uid="uid://c2aouanrvryqo" path="res://Assets/Tests/test stick/run no arm/run_noarm_09.png" id="16_f5k7j"]
+[ext_resource type="Texture2D" uid="uid://5lmexbaja5jr" path="res://Assets/Tests/test stick/run no arm/run_noarm_10.png" id="17_xsxe0"]
+[ext_resource type="Texture2D" uid="uid://dr3padjgn1yxl" path="res://Assets/Tests/test stick/run no arm/run_noarm_11.png" id="18_hu8xm"]
+[ext_resource type="Texture2D" uid="uid://dxd61w17h4lg3" path="res://Assets/Tests/test stick/run no arm/run_noarm_12.png" id="19_neu3y"]
+[ext_resource type="Texture2D" uid="uid://dus4das05awem" path="res://Assets/Tests/test stick/run no arm/run_noarm_13.png" id="20_uh5po"]
+[ext_resource type="Texture2D" uid="uid://k5yxy1tkqtv7" path="res://Assets/Tests/test stick/run no arm/run_noarm_14.png" id="21_awr7i"]
+[ext_resource type="Texture2D" uid="uid://tfihafy1h4y4" path="res://Assets/Tests/test stick/jump/jump_07png.png" id="22_jq77o"]
+[ext_resource type="Texture2D" uid="uid://ctue8mn8kmkcf" path="res://Assets/Tests/test stick/gun_arm.png" id="22_mb6du"]
+[ext_resource type="Script" path="res://Gladiator/Arm.gd" id="23_1v2oo"]
+[ext_resource type="Texture2D" uid="uid://q7647t5y8m6d" path="res://Assets/Tests/test stick/jump/jump_08png.png" id="23_4uofu"]
+[ext_resource type="Texture2D" uid="uid://dih4pg1ut6yls" path="res://Assets/Tests/test stick/jump/jump_09png.png" id="24_872lh"]
+[ext_resource type="Texture2D" uid="uid://b7xojyqrbbl4j" path="res://Assets/Tests/test stick/jump/jump_10png.png" id="25_wsfte"]
+[ext_resource type="Texture2D" uid="uid://dabd7up27557x" path="res://Assets/Tests/test stick/jump/jump_11png.png" id="26_pmmfn"]
+[ext_resource type="Texture2D" uid="uid://dq2bsfv20ff1e" path="res://Assets/Tests/test stick/jump/jump_12png.png" id="27_uc4m3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mv1rx"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_faqba")
+"texture": ExtResource("23_4uofu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_vae8i")
+"texture": ExtResource("24_872lh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_6asav")
+"texture": ExtResource("25_wsfte")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_eyjb3")
+"texture": ExtResource("26_pmmfn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_uc4m3")
 }],
 "loop": true,
+"name": &"Fall",
+"speed": 24.0
+}, {
+"frames": [],
+"loop": true,
 "name": &"Idle",
-"speed": 5.0
+"speed": 24.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_n7s6j")
+"texture": ExtResource("22_jq77o")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_ua64k")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_5a4t0")
+"texture": ExtResource("9_midgu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_sax7f")
+"texture": ExtResource("10_eh1uv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_0mslx")
+"texture": ExtResource("11_r5wqs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_bb1ae")
+"texture": ExtResource("12_4k8ga")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_xu5ce")
+"texture": ExtResource("13_vm8vg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_ammj6")
+"texture": ExtResource("14_wmnnt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_28okk")
+"texture": ExtResource("15_6it3c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_f5k7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_xsxe0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_hu8xm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_neu3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_uh5po")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_awr7i")
 }],
 "loop": true,
 "name": &"Run",
-"speed": 5.0
+"speed": 24.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rqygn"]
 radius = 15.0
-height = 48.0
+height = 120.0
 
 [node name="Gladiator" type="CharacterBody2D"]
 script = ExtResource("1_00vet")
@@ -74,9 +118,16 @@ JUMP_VELOCITY = -600.0
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mv1rx")
 animation = &"Run"
+frame_progress = 0.660761
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, -9)
 shape = SubResource("CapsuleShape2D_rqygn")
+
+[node name="Arm" type="Sprite2D" parent="."]
+position = Vector2(-1, -23)
+texture = ExtResource("22_mb6du")
+script = ExtResource("23_1v2oo")
