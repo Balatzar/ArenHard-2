@@ -7,9 +7,13 @@ extends CharacterBody2D
 @onready var animator = get_node("Body")
 @onready var arm_gun = get_node("ArmGun")
 @onready var arms = get_node("Arms")
+@onready var backArm = get_node("Body").get_node("ArmGun02")
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+#deal with the jump mechanic variables
+var MAX_JUMP_TIME = 0.5
+var jump_time = 0
 
 func _ready():
 	animator.play("Idle")
@@ -37,20 +41,26 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 		if velocity.y == 0:
 			animator.play("Run")
+			arms.play("Run")
+			backArm.play("Run")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		if velocity.y == 0:
 			animator.play("Idle")
+			arms.play("Idle")
 	
 	if velocity.y < 0:
 		animator.play("Jump")
+		backArm.play("Jump")
 	elif velocity.y > 0:
 		animator.play("Fall")
+		backArm.play("Jump")
 
 	move_and_slide()
 
 func take_gun():
 	arm_gun.visible = true
+	backArm.visible = true
 	arms.visible = false
 
 func flip(x_axis):

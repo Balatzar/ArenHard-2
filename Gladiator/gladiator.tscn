@@ -1,44 +1,35 @@
-[gd_scene load_steps=26 format=3 uid="uid://p6eenj0m0n16"]
+[gd_scene load_steps=21 format=3 uid="uid://p6eenj0m0n16"]
 
 [ext_resource type="Script" path="res://Gladiator/gladiator.gd" id="1_00vet"]
-[ext_resource type="Texture2D" uid="uid://bphi5f64tbxsa" path="res://Assets/Tests/Stickman/noArm_fall.png" id="2_silqh"]
-[ext_resource type="Texture2D" uid="uid://wgf54a1mgn1" path="res://Assets/Tests/Stickman/noArm_jump.png" id="5_aoq36"]
-[ext_resource type="Texture2D" uid="uid://b1njho1gvabni" path="res://Assets/Tests/Stickman/idle_no_arm/noArm_idle_01.png" id="7_kd3u7"]
-[ext_resource type="Texture2D" uid="uid://ktrh7vjghyfb" path="res://Assets/Tests/Stickman/idle_no_arm/noArm_idle_02.png" id="8_4x1nc"]
-[ext_resource type="Texture2D" uid="uid://clhi3qfaa5oeu" path="res://Assets/Tests/Stickman/run no arm/run_noarm_01.png" id="10_4nxjm"]
-[ext_resource type="Texture2D" uid="uid://c2ew7rbcjl22s" path="res://Assets/Tests/Stickman/run no arm/run_noarm_02.png" id="11_kt2el"]
-[ext_resource type="Texture2D" uid="uid://ugmyiomqf0ss" path="res://Assets/Tests/Stickman/run no arm/run_noarm_03.png" id="12_gxpqb"]
-[ext_resource type="Texture2D" uid="uid://ura8s03fueep" path="res://Assets/Tests/Stickman/run no arm/run_noarm_04.png" id="13_5d20l"]
-[ext_resource type="Texture2D" uid="uid://cseps4vaivjiw" path="res://Assets/Tests/Stickman/run no arm/run_noarm_05.png" id="14_56nkk"]
-[ext_resource type="Texture2D" uid="uid://4gcojjwud2r6" path="res://Assets/Tests/Stickman/run no arm/run_noarm_06.png" id="15_n4fip"]
-[ext_resource type="Texture2D" uid="uid://4ws1wmf5g0kv" path="res://Assets/Tests/Stickman/run no arm/run_noarm_07.png" id="16_gd7kg"]
-[ext_resource type="Texture2D" uid="uid://d4f0i1xo8x4ah" path="res://Assets/Tests/Stickman/run no arm/run_noarm_08.png" id="17_klksl"]
-[ext_resource type="Texture2D" uid="uid://c2aouanrvryqo" path="res://Assets/Tests/Stickman/run no arm/run_noarm_09.png" id="18_1ksj4"]
-[ext_resource type="Texture2D" uid="uid://5lmexbaja5jr" path="res://Assets/Tests/Stickman/run no arm/run_noarm_10.png" id="19_1i1sh"]
-[ext_resource type="Texture2D" uid="uid://dr3padjgn1yxl" path="res://Assets/Tests/Stickman/run no arm/run_noarm_11.png" id="20_ygfq1"]
-[ext_resource type="Texture2D" uid="uid://dxd61w17h4lg3" path="res://Assets/Tests/Stickman/run no arm/run_noarm_12.png" id="21_hceng"]
-[ext_resource type="Texture2D" uid="uid://dus4das05awem" path="res://Assets/Tests/Stickman/run no arm/run_noarm_13.png" id="22_tb8gt"]
-[ext_resource type="Texture2D" uid="uid://k5yxy1tkqtv7" path="res://Assets/Tests/Stickman/run no arm/run_noarm_14.png" id="23_5h10d"]
+[ext_resource type="Texture2D" uid="uid://w25pn1rgqkuf" path="res://NewAssets/Characters/TRICOT1/IDLE/IDLE BODY/IDLE BODY 01.png" id="2_yg3nv"]
+[ext_resource type="Texture2D" uid="uid://dwvs3iovacmw2" path="res://NewAssets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 01.png" id="3_4k5cq"]
+[ext_resource type="Texture2D" uid="uid://boexp32fm4kf7" path="res://NewAssets/Characters/TRICOT1/JUMP/JUMP BODY/JUMP BODY 01.png" id="3_bflou"]
+[ext_resource type="Texture2D" uid="uid://bepw1cxyag5cj" path="res://NewAssets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 02.png" id="4_exieh"]
+[ext_resource type="Texture2D" uid="uid://b4wt1ddpwwk1i" path="res://NewAssets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 03.png" id="5_0bedb"]
+[ext_resource type="Texture2D" uid="uid://c6exoo3a7s18y" path="res://NewAssets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 04.png" id="6_vf3nv"]
+[ext_resource type="Texture2D" uid="uid://cuwfgxvaxd65b" path="res://NewAssets/Characters/TRICOT1/IDLE/IDLE ARM GUN 02/IDLE ARM GUN 02.png" id="7_c72lm"]
+[ext_resource type="Texture2D" uid="uid://btgo8hdnske2c" path="res://NewAssets/Characters/TRICOT1/IDLE/IDLE ARM BASIC/IDLE ARM BASIC.png" id="8_bie28"]
+[ext_resource type="Texture2D" uid="uid://c0axqws7x088e" path="res://NewAssets/Characters/TRICOT1/JUMP/JUMP ARM GUN 02/TEST 03JUMP ARM GUN 02.png" id="8_jbj5j"]
+[ext_resource type="Texture2D" uid="uid://c8neyrjx27g8f" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 01.png" id="9_ke3dg"]
+[ext_resource type="Texture2D" uid="uid://cc7gu8sb6tb7y" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM GUN/RUN ARM GUN.png" id="9_veo8y"]
+[ext_resource type="Texture2D" uid="uid://bvxgxwfeks32w" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 02.png" id="10_ynspl"]
+[ext_resource type="Texture2D" uid="uid://b5l1rkfhmv0il" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 03.png" id="11_dt6ym"]
+[ext_resource type="Texture2D" uid="uid://b7ovcrgw5oaw3" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 04.png" id="12_gh8k2"]
 [ext_resource type="PackedScene" uid="uid://f4wymbkmce1v" path="res://Gladiator/ArmGun/arm_gun.tscn" id="24_iiusy"]
-[ext_resource type="Texture2D" uid="uid://c8rojvvfoextp" path="res://Assets/Tests/Stickman/arm_idle/arms_idle_01.png" id="25_6nex6"]
-[ext_resource type="Texture2D" uid="uid://d1cpel4drn5yi" path="res://Assets/Tests/Stickman/arm_idle/arms_idle_02.png" id="26_3libx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mv1rx"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_silqh")
+"texture": ExtResource("3_bflou")
 }],
 "loop": true,
 "name": &"Fall",
 "speed": 24.0
 }, {
 "frames": [{
-"duration": 10.0,
-"texture": ExtResource("7_kd3u7")
-}, {
-"duration": 10.0,
-"texture": ExtResource("8_4x1nc")
+"duration": 1.0,
+"texture": ExtResource("2_yg3nv")
 }],
 "loop": true,
 "name": &"Idle",
@@ -46,7 +37,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_aoq36")
+"texture": ExtResource("3_bflou")
 }],
 "loop": true,
 "name": &"Jump",
@@ -54,68 +45,76 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("10_4nxjm")
+"texture": ExtResource("3_4k5cq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_kt2el")
+"texture": ExtResource("4_exieh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_gxpqb")
+"texture": ExtResource("5_0bedb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_5d20l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_56nkk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_n4fip")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_gd7kg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_klksl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_1ksj4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_1i1sh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_ygfq1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("21_hceng")
-}, {
-"duration": 1.0,
-"texture": ExtResource("22_tb8gt")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_5h10d")
+"texture": ExtResource("6_vf3nv")
 }],
 "loop": true,
 "name": &"Run",
-"speed": 24.0
+"speed": 8.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jhu7n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_jbj5j")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_c72lm")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rqygn"]
-radius = 15.0
-height = 120.0
+radius = 39.0
+height = 176.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rg5cx"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("25_6nex6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_3libx")
+"texture": ExtResource("8_bie28")
 }],
 "loop": true,
 "name": &"Idle",
 "speed": 1.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_ke3dg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ynspl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dt6ym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_gh8k2")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 8.0
 }]
 
 [node name="Gladiator" type="CharacterBody2D"]
@@ -124,19 +123,26 @@ JUMP_VELOCITY = -600.0
 
 [node name="Body" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mv1rx")
+animation = &"Fall"
+
+[node name="ArmGun02" type="AnimatedSprite2D" parent="Body"]
+visible = false
+z_index = -1
+sprite_frames = SubResource("SpriteFrames_jhu7n")
 animation = &"Jump"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-4, -9)
+position = Vector2(4, 8)
 shape = SubResource("CapsuleShape2D_rqygn")
 
 [node name="ArmGun" parent="." instance=ExtResource("24_iiusy")]
 visible = false
+position = Vector2(0, 0)
+texture = ExtResource("9_veo8y")
 
 [node name="Arms" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rg5cx")
-animation = &"Idle"
-frame_progress = 0.646389
+animation = &"Jump"
