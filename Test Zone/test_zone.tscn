@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://xb43cltwar74"]
+[gd_scene load_steps=6 format=3 uid="uid://xb43cltwar74"]
 
 [ext_resource type="Texture2D" uid="uid://bldyvx3ugg0s0" path="res://Assets/Tests/kenney_abstract-platformer/Tilesheet/tilesheet_complete.png" id="1_sp64j"]
 [ext_resource type="PackedScene" uid="uid://p6eenj0m0n16" path="res://Gladiator/gladiator.tscn" id="2_jpqrh"]
+[ext_resource type="PackedScene" uid="uid://c6vleknr72bsi" path="res://Weapons/Gun/gun.tscn" id="3_vellk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_og8bp"]
 resource_name = "Abstrait"
@@ -14,7 +15,6 @@ texture_region_size = Vector2i(64, 64)
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_0/angular_velocity = 0.0
 2:0/0 = 0
-2:0/0/terrain = 0
 2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:0/0/physics_layer_0/angular_velocity = 0.0
 3:0/0 = 0
@@ -839,7 +839,10 @@ sources/0 = SubResource("TileSetAtlasSource_og8bp")
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_ulxem")
 format = 2
-layer_0/tile_data = PackedInt32Array(393228, 196608, 3, 393227, 131072, 3, 393226, 131072, 3, 393225, 131072, 3, 393224, 131072, 3, 393223, 65536, 3, 262165, 196608, 3, 262164, 131072, 3, 262163, 131072, 3, 262162, 131072, 3, 262161, 65536, 3, 131099, 196608, 3, 131098, 131072, 3, 131097, 131072, 3, 131096, 131072, 3, 131095, 65536, 3, 327715, 196608, 3, 327714, 131072, 3, 327713, 131072, 3, 327712, 131072, 3, 327711, 65536, 3, 524325, 65536, 3, 524326, 131072, 3, 524327, 131072, 3, 524328, 131072, 3, 524329, 131072, 3, 524330, 196608, 3)
+layer_0/tile_data = PackedInt32Array(393228, 196608, 3, 393227, 131072, 3, 393226, 131072, 3, 393225, 131072, 3, 393224, 131072, 3, 393223, 131072, 3, 262165, 196608, 3, 262164, 131072, 3, 262163, 131072, 3, 262162, 131072, 3, 262161, 65536, 3, 131099, 196608, 3, 131098, 131072, 3, 131097, 131072, 3, 131096, 131072, 3, 131095, 65536, 3, 327715, 196608, 3, 327714, 131072, 3, 327713, 131072, 3, 327712, 131072, 3, 327711, 65536, 3, 524325, 65536, 3, 524326, 131072, 3, 524327, 131072, 3, 524328, 131072, 3, 524329, 131072, 3, 524330, 196608, 3, 393222, 131072, 3, 393221, 131072, 3, 393220, 131072, 3, 393219, 131072, 3, 393218, 131072, 3, 393217, 131072, 3, 393216, 131072, 3, 458751, 131072, 3, 458750, 131072, 3, 458749, 131072, 3, 458748, 131072, 3, 458747, 131072, 3, 458746, 131072, 3, 458745, 131072, 3, 458744, 131072, 3, 458743, 131072, 3, 458742, 131072, 3, 458741, 131072, 3, 458740, 131072, 3, 458739, 131072, 3, 458738, 131072, 3, 458737, 65536, 3)
 
 [node name="Gladiator" parent="." instance=ExtResource("2_jpqrh")]
-position = Vector2(550, 274)
+position = Vector2(-853, 281)
+
+[node name="Gun" parent="." instance=ExtResource("3_vellk")]
+position = Vector2(-242, 369)

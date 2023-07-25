@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://f4wymbkmce1v"]
+
+[ext_resource type="Texture2D" uid="uid://ctue8mn8kmkcf" path="res://Assets/Tests/Stickman/gun_arm.png" id="1_8kprd"]
+[ext_resource type="Script" path="res://Gladiator/ArmGun/arm_gun.gd" id="2_usw2a"]
+[ext_resource type="PackedScene" uid="uid://buncutx63xmxk" path="res://Weapons/Bullet/bullet.tscn" id="3_gsuba"]
+
+[node name="ArmGun" type="Sprite2D"]
+position = Vector2(-1, -23)
+texture = ExtResource("1_8kprd")
+script = ExtResource("2_usw2a")
+Bullet = ExtResource("3_gsuba")
+
+[node name="Muzzle" type="Marker2D" parent="."]
+position = Vector2(62, -35)
