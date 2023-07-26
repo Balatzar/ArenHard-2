@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://bdwp3pudefloj" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 01.png" id="9_ke3dg"]
 [ext_resource type="Texture2D" uid="uid://cvir60mc6oh0" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 02.png" id="10_ynspl"]
 [ext_resource type="Texture2D" uid="uid://lm26vpii1wxd" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 03.png" id="11_dt6ym"]
-[ext_resource type="Texture2D" uid="uid://b5qm5wuae82xs" path="res://NewAssets/Characters/Test/arm_gun (1).png" id="12_45pcl"]
+[ext_resource type="Texture2D" uid="uid://jvs7c83w540k" path="res://NewAssets/Characters/Test/arm_katan (1).png" id="12_bvodg"]
 [ext_resource type="Texture2D" uid="uid://dq2mtxrmvwvnk" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 04.png" id="12_gh8k2"]
 [ext_resource type="Texture2D" uid="uid://cqinrhy0dlkml" path="res://NewAssets/Characters/TRICOT1/FALL/FALL ARM/FALL ARM 01.png" id="13_8xsrq"]
 [ext_resource type="Texture2D" uid="uid://407jb0x454lr" path="res://NewAssets/Characters/TRICOT1/JUMP/JUMP ARM/JUMP ARM.png" id="15_jayve"]
@@ -154,7 +154,7 @@ shape = SubResource("CapsuleShape2D_rqygn")
 [node name="ArmGun" parent="." instance=ExtResource("24_iiusy")]
 visible = false
 position = Vector2(0, 0)
-texture = ExtResource("12_45pcl")
+texture = ExtResource("12_bvodg")
 
 [node name="Arms" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rg5cx")
