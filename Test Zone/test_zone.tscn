@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://xb43cltwar74"]
+[gd_scene load_steps=10 format=3 uid="uid://xb43cltwar74"]
 
+[ext_resource type="Script" path="res://Test Zone/test_zone.gd" id="1_mbgak"]
 [ext_resource type="Texture2D" uid="uid://calso57vgsngd" path="res://NewAssets/splash screen.png" id="1_tgwem"]
 [ext_resource type="Texture2D" uid="uid://nw6y6cgrktfd" path="res://NewAssets/tiles-1.png" id="2_hvd4c"]
 [ext_resource type="PackedScene" uid="uid://p6eenj0m0n16" path="res://Gladiator/gladiator.tscn" id="2_jpqrh"]
@@ -363,6 +364,7 @@ sources/0 = SubResource("TileSetAtlasSource_og8bp")
 sources/5 = SubResource("TileSetAtlasSource_sn4nw")
 
 [node name="Test Zone" type="Node2D"]
+script = ExtResource("1_mbgak")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_ulxem")

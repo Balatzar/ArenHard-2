@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6kyvdj4r0khi"]
+
+[ext_resource type="Script" path="res://Mutiplayer Scene/multiplayer_scene.gd" id="1_0hcsa"]
+
+[node name="MultiplayerScene" type="Node2D"]
+script = ExtResource("1_0hcsa")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Host" type="Button" parent="UI"]
+offset_left = 753.0
+offset_top = 256.0
+offset_right = 935.0
+offset_bottom = 326.0
+text = "Host"
+
+[node name="Connect" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 749.0
+offset_top = 389.0
+offset_right = 944.0
+offset_bottom = 455.0
+text = "Connect"
+
+[node name="Network" type="Node" parent="."]
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://Gladiator/gladiator.tscn")
+spawn_path = NodePath("../Network")
+
+[connection signal="pressed" from="UI/Host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="UI/Connect" to="." method="_on_connect_pressed"]

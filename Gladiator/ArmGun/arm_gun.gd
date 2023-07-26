@@ -45,6 +45,6 @@ func shoot():
 	
 	await animator.animation_finished
 	animator.play("Idle")
-	await get_tree().create_timer(1).timeout
+	await get_tree().create_timer(0.2).timeout
 	shooting = false
 
