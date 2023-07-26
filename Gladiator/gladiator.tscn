@@ -1,24 +1,20 @@
-[gd_scene load_steps=24 format=3 uid="uid://p6eenj0m0n16"]
+[gd_scene load_steps=19 format=3 uid="uid://p6eenj0m0n16"]
 
 [ext_resource type="Script" path="res://Gladiator/gladiator.gd" id="1_00vet"]
-[ext_resource type="Texture2D" uid="uid://c1fgghukb2gci" path="res://NewAssets/Characters/TRICOT1/FALL/FALL BODY/FALL BODY 01.png" id="2_4qj5e"]
-[ext_resource type="Texture2D" uid="uid://dcnbkxxrb3ia5" path="res://NewAssets/Characters/TRICOT1/IDLE/IDLE BODY/IDLE BODY 01.png" id="2_yg3nv"]
+[ext_resource type="Texture2D" uid="uid://d3udpfyspvyvo" path="res://NewAssets/Characters/TRICOT1/FALL/FALL BODY/FALL BODY 01.png" id="2_4qj5e"]
+[ext_resource type="Texture2D" uid="uid://c1a1xgg1vijhb" path="res://NewAssets/Characters/TRICOT1/IDLE/IDLE BODY/IDLE BODY 01.png" id="2_yg3nv"]
 [ext_resource type="Texture2D" uid="uid://ujesue1wycfr" path="res://NewAssets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 01.png" id="3_4k5cq"]
-[ext_resource type="Texture2D" uid="uid://bfrnovx6u3xru" path="res://NewAssets/Characters/TRICOT1/JUMP/JUMP BODY/JUMP BODY 01.png" id="3_bflou"]
+[ext_resource type="Texture2D" uid="uid://bxqqcv0xild6x" path="res://NewAssets/Characters/TRICOT1/JUMP/JUMP BODY/JUMP BODY 01.png" id="3_bflou"]
 [ext_resource type="Texture2D" uid="uid://bbtfpl8jjb2ib" path="res://NewAssets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 02.png" id="4_exieh"]
-[ext_resource type="Texture2D" uid="uid://ds7wvdt5kpxyd" path="res://NewAssets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 03.png" id="5_0bedb"]
-[ext_resource type="Texture2D" uid="uid://bi85ncssyaesd" path="res://NewAssets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 04.png" id="6_vf3nv"]
-[ext_resource type="Texture2D" uid="uid://rkpp86kjelo0" path="res://NewAssets/Characters/TRICOT1/IDLE/IDLE ARM GUN 02/IDLE ARM GUN 02.png" id="7_c72lm"]
-[ext_resource type="Texture2D" uid="uid://cvrj5tag5ty3s" path="res://NewAssets/Characters/TRICOT1/IDLE/IDLE ARM BASIC/IDLE ARM BASIC.png" id="8_bie28"]
-[ext_resource type="Texture2D" uid="uid://cgub207ldu1dl" path="res://NewAssets/Characters/TRICOT1/JUMP/JUMP ARM GUN 02/TEST 03JUMP ARM GUN 02.png" id="8_jbj5j"]
-[ext_resource type="Texture2D" uid="uid://bdwp3pudefloj" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 01.png" id="9_ke3dg"]
-[ext_resource type="Texture2D" uid="uid://cvir60mc6oh0" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 02.png" id="10_ynspl"]
-[ext_resource type="Texture2D" uid="uid://lm26vpii1wxd" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 03.png" id="11_dt6ym"]
-[ext_resource type="Texture2D" uid="uid://jvs7c83w540k" path="res://NewAssets/Characters/Test/arm_katan (1).png" id="12_bvodg"]
-[ext_resource type="Texture2D" uid="uid://dq2mtxrmvwvnk" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 04.png" id="12_gh8k2"]
-[ext_resource type="Texture2D" uid="uid://cqinrhy0dlkml" path="res://NewAssets/Characters/TRICOT1/FALL/FALL ARM/FALL ARM 01.png" id="13_8xsrq"]
-[ext_resource type="Texture2D" uid="uid://407jb0x454lr" path="res://NewAssets/Characters/TRICOT1/JUMP/JUMP ARM/JUMP ARM.png" id="15_jayve"]
-[ext_resource type="PackedScene" uid="uid://f4wymbkmce1v" path="res://Gladiator/ArmGun/arm_gun.tscn" id="24_iiusy"]
+[ext_resource type="Texture2D" uid="uid://cnhx145rw28ig" path="res://NewAssets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 03.png" id="5_0bedb"]
+[ext_resource type="Texture2D" uid="uid://dnctyuy1ioj23" path="res://NewAssets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 04.png" id="6_vf3nv"]
+[ext_resource type="Texture2D" uid="uid://udjm0f4k6ocn" path="res://NewAssets/Characters/TRICOT1/IDLE/IDLE ARM BASIC/IDLE ARM BASIC.png" id="8_bie28"]
+[ext_resource type="Texture2D" uid="uid://cu4kpdil3pqbm" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 01.png" id="9_ke3dg"]
+[ext_resource type="Texture2D" uid="uid://c611m2uwch4x6" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 02.png" id="10_ynspl"]
+[ext_resource type="Texture2D" uid="uid://dksnjkv1amats" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 03.png" id="11_dt6ym"]
+[ext_resource type="Texture2D" uid="uid://bfbeb5juqifwj" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 04.png" id="12_gh8k2"]
+[ext_resource type="Texture2D" uid="uid://by2qt4hacp7v4" path="res://NewAssets/Characters/TRICOT1/FALL/FALL ARM/FALL ARM 01.png" id="13_8xsrq"]
+[ext_resource type="Texture2D" uid="uid://ihx63j5npkki" path="res://NewAssets/Characters/TRICOT1/JUMP/JUMP ARM/JUMP ARM.png" id="15_jayve"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mv1rx"]
 animations = [{
@@ -64,28 +60,9 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_jhu7n"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("8_jbj5j")
-}],
-"loop": true,
-"name": &"Jump",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("7_c72lm")
-}],
-"loop": true,
-"name": &"Run",
-"speed": 5.0
-}]
-
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rqygn"]
 radius = 39.0
-height = 176.0
+height = 156.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rg5cx"]
 animations = [{
@@ -138,12 +115,6 @@ script = ExtResource("1_00vet")
 sprite_frames = SubResource("SpriteFrames_mv1rx")
 animation = &"Fall"
 
-[node name="ArmGun02" type="AnimatedSprite2D" parent="Body"]
-visible = false
-z_index = -1
-sprite_frames = SubResource("SpriteFrames_jhu7n")
-animation = &"Jump"
-
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
 
@@ -151,11 +122,8 @@ zoom = Vector2(2, 2)
 position = Vector2(4, 8)
 shape = SubResource("CapsuleShape2D_rqygn")
 
-[node name="ArmGun" parent="." instance=ExtResource("24_iiusy")]
-visible = false
-position = Vector2(0, 0)
-texture = ExtResource("12_bvodg")
-
 [node name="Arms" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rg5cx")
 animation = &"Jump"
+
+[node name="ArmPivot" type="Marker2D" parent="."]
