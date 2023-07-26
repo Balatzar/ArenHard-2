@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3udpfyspvyvo"
-path="res://.godot/imported/FALL BODY 01.png-8ae863d2973c7d495f1c19a0e8c2cacc.ctex"
+uid="uid://bwxojgwy6wb47"
+path="res://.godot/imported/FALL BODY 01.png-d43ec7c2c3a8ce5f8c87ebc670bcd850.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://NewAssets/Characters/TRICOT1/FALL/FALL BODY/FALL BODY 01.png"
-dest_files=["res://.godot/imported/FALL BODY 01.png-8ae863d2973c7d495f1c19a0e8c2cacc.ctex"]
+source_file="res://NewAssets/CHARACTERS/TRICOT1/FALL/FALL BODY/FALL BODY 01.png"
+dest_files=["res://.godot/imported/FALL BODY 01.png-d43ec7c2c3a8ce5f8c87ebc670bcd850.ctex"]
 
 [params]
 

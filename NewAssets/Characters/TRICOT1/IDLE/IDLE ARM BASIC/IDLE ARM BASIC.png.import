@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://udjm0f4k6ocn"
-path="res://.godot/imported/IDLE ARM BASIC.png-36969a00152575ab3e0ccae10d4f6a94.ctex"
+uid="uid://d3s38kfoyme7k"
+path="res://.godot/imported/IDLE ARM BASIC.png-e55f3ddd8e8b7d83652c18625e0dffcf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://NewAssets/Characters/TRICOT1/IDLE/IDLE ARM BASIC/IDLE ARM BASIC.png"
-dest_files=["res://.godot/imported/IDLE ARM BASIC.png-36969a00152575ab3e0ccae10d4f6a94.ctex"]
+source_file="res://NewAssets/CHARACTERS/TRICOT1/IDLE/IDLE ARM BASIC/IDLE ARM BASIC.png"
+dest_files=["res://.godot/imported/IDLE ARM BASIC.png-e55f3ddd8e8b7d83652c18625e0dffcf.ctex"]
 
 [params]
 

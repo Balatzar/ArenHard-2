@@ -4,7 +4,7 @@ extends Node2D
 
 @export var max_rotation_up = -1
 @export var max_rotation_down = 1.8
-
+@export var cooldown = 1.00
 @onready var animator = $AnimationPlayer
 
 var shooting = false
@@ -45,6 +45,6 @@ func shoot():
 	
 	await animator.animation_finished
 	animator.play("Idle")
-	await get_tree().create_timer(0.2).timeout
+	await get_tree().create_timer(cooldown).timeout
 	shooting = false
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ch4g38gb6vj1m"
-path="res://.godot/imported/JUMP ARM GUN.png-29e4425c253c8c335f7efe1361b393ca.ctex"
+uid="uid://bsjqmeiptk5r1"
+path="res://.godot/imported/JUMP ARM GUN.png-16c230c0d453f53febff261c69e62a41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://NewAssets/Characters/TRICOT1/JUMP/JUMP ARM GUN/JUMP ARM GUN.png"
-dest_files=["res://.godot/imported/JUMP ARM GUN.png-29e4425c253c8c335f7efe1361b393ca.ctex"]
+source_file="res://NewAssets/CHARACTERS/TRICOT1/JUMP/JUMP ARM GUN/JUMP ARM GUN.png"
+dest_files=["res://.godot/imported/JUMP ARM GUN.png-16c230c0d453f53febff261c69e62a41.ctex"]
 
 [params]
 

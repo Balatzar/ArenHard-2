@@ -1,26 +1,24 @@
-[gd_scene load_steps=19 format=3 uid="uid://p6eenj0m0n16"]
+[gd_scene load_steps=17 format=3 uid="uid://p6eenj0m0n16"]
 
 [ext_resource type="Script" path="res://Gladiator/gladiator.gd" id="1_00vet"]
-[ext_resource type="Texture2D" uid="uid://d3udpfyspvyvo" path="res://NewAssets/Characters/TRICOT1/FALL/FALL BODY/FALL BODY 01.png" id="2_4qj5e"]
-[ext_resource type="Texture2D" uid="uid://c1a1xgg1vijhb" path="res://NewAssets/Characters/TRICOT1/IDLE/IDLE BODY/IDLE BODY 01.png" id="2_yg3nv"]
-[ext_resource type="Texture2D" uid="uid://ujesue1wycfr" path="res://NewAssets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 01.png" id="3_4k5cq"]
-[ext_resource type="Texture2D" uid="uid://bxqqcv0xild6x" path="res://NewAssets/Characters/TRICOT1/JUMP/JUMP BODY/JUMP BODY 01.png" id="3_bflou"]
-[ext_resource type="Texture2D" uid="uid://bbtfpl8jjb2ib" path="res://NewAssets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 02.png" id="4_exieh"]
-[ext_resource type="Texture2D" uid="uid://cnhx145rw28ig" path="res://NewAssets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 03.png" id="5_0bedb"]
-[ext_resource type="Texture2D" uid="uid://dnctyuy1ioj23" path="res://NewAssets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 04.png" id="6_vf3nv"]
-[ext_resource type="Texture2D" uid="uid://udjm0f4k6ocn" path="res://NewAssets/Characters/TRICOT1/IDLE/IDLE ARM BASIC/IDLE ARM BASIC.png" id="8_bie28"]
-[ext_resource type="Texture2D" uid="uid://cu4kpdil3pqbm" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 01.png" id="9_ke3dg"]
-[ext_resource type="Texture2D" uid="uid://c611m2uwch4x6" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 02.png" id="10_ynspl"]
-[ext_resource type="Texture2D" uid="uid://dksnjkv1amats" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 03.png" id="11_dt6ym"]
-[ext_resource type="Texture2D" uid="uid://bfbeb5juqifwj" path="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 04.png" id="12_gh8k2"]
-[ext_resource type="Texture2D" uid="uid://by2qt4hacp7v4" path="res://NewAssets/Characters/TRICOT1/FALL/FALL ARM/FALL ARM 01.png" id="13_8xsrq"]
-[ext_resource type="Texture2D" uid="uid://ihx63j5npkki" path="res://NewAssets/Characters/TRICOT1/JUMP/JUMP ARM/JUMP ARM.png" id="15_jayve"]
+[ext_resource type="Texture2D" uid="uid://bg8jrjg27gxlu" path="res://NewAssets/CHARACTERS/WOKTOPUTE/FALL/FALL BODY/FALL BODY 01.png" id="2_ie2bj"]
+[ext_resource type="Texture2D" uid="uid://b8em2cehr84s8" path="res://NewAssets/CHARACTERS/WOKTOPUTE/IDLE/IDLE BODY/IDLE BODY 01.png" id="3_kw4hg"]
+[ext_resource type="Texture2D" uid="uid://bjpbk5m7cxc7y" path="res://NewAssets/CHARACTERS/WOKTOPUTE/IDLE/IDLE BODY/IDLE BODY 02.png" id="4_2bklf"]
+[ext_resource type="Texture2D" uid="uid://clc74ehh8dif" path="res://NewAssets/CHARACTERS/WOKTOPUTE/JUMP/JUMP BODY/JUMP BODY 01.png" id="5_xvpwk"]
+[ext_resource type="Texture2D" uid="uid://dr25i55ut2k7f" path="res://NewAssets/CHARACTERS/WOKTOPUTE/RUN/RUN BODY/RUN BODY 01.png" id="6_tmkqt"]
+[ext_resource type="Texture2D" uid="uid://bu5xbupg5uibv" path="res://NewAssets/CHARACTERS/WOKTOPUTE/RUN/RUN BODY/RUN BODY 02.png" id="7_o8xyu"]
+[ext_resource type="Texture2D" uid="uid://47g43icr8dpi" path="res://NewAssets/CHARACTERS/WOKTOPUTE/FALL/FALL ARM/FALL ARM.png" id="8_s5syu"]
+[ext_resource type="Texture2D" uid="uid://c7fmp8jhh8jd1" path="res://NewAssets/CHARACTERS/WOKTOPUTE/IDLE/IDLE ARM/IDLE ARM.png" id="9_bcs80"]
+[ext_resource type="Texture2D" uid="uid://cpb7b6htev0qw" path="res://NewAssets/CHARACTERS/WOKTOPUTE/JUMP/JUMP ARM/JUMP ARM 01.png" id="10_mw6xd"]
+[ext_resource type="Texture2D" uid="uid://c57oryubd1u6x" path="res://NewAssets/CHARACTERS/WOKTOPUTE/RUN/RUN ARM/RUN ARM 01.png" id="11_r5qnq"]
+[ext_resource type="Texture2D" uid="uid://0mhnlmrlngak" path="res://NewAssets/CHARACTERS/WOKTOPUTE/RUN/RUN ARM/RUN ARM 02.png" id="12_r8fbx"]
+[ext_resource type="Script" path="res://Gladiator/Arms/arms.gd" id="16_xa8ks"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mv1rx"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_4qj5e")
+"texture": ExtResource("2_ie2bj")
 }],
 "loop": true,
 "name": &"Fall",
@@ -28,15 +26,18 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_yg3nv")
+"texture": ExtResource("3_kw4hg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2bklf")
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 24.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_bflou")
+"texture": ExtResource("5_xvpwk")
 }],
 "loop": true,
 "name": &"Jump",
@@ -44,20 +45,14 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_4k5cq")
+"texture": ExtResource("6_tmkqt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_exieh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_0bedb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_vf3nv")
+"texture": ExtResource("7_o8xyu")
 }],
 "loop": true,
 "name": &"Run",
-"speed": 8.0
+"speed": 6.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rqygn"]
@@ -68,7 +63,7 @@ height = 156.0
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("13_8xsrq")
+"texture": ExtResource("8_s5syu")
 }],
 "loop": true,
 "name": &"Fall",
@@ -76,7 +71,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_bie28")
+"texture": ExtResource("9_bcs80")
 }],
 "loop": true,
 "name": &"Idle",
@@ -84,7 +79,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("15_jayve")
+"texture": ExtResource("10_mw6xd")
 }],
 "loop": true,
 "name": &"Jump",
@@ -92,20 +87,14 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_ke3dg")
+"texture": ExtResource("11_r5qnq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_ynspl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_dt6ym")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_gh8k2")
+"texture": ExtResource("12_r8fbx")
 }],
 "loop": true,
 "name": &"Run",
-"speed": 8.0
+"speed": 4.0
 }]
 
 [node name="Gladiator" type="CharacterBody2D"]
@@ -113,7 +102,7 @@ script = ExtResource("1_00vet")
 
 [node name="Body" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mv1rx")
-animation = &"Fall"
+animation = &"Run"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
@@ -124,6 +113,7 @@ shape = SubResource("CapsuleShape2D_rqygn")
 
 [node name="Arms" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rg5cx")
-animation = &"Jump"
+animation = &"Run"
+script = ExtResource("16_xa8ks")
 
 [node name="ArmPivot" type="Marker2D" parent="."]

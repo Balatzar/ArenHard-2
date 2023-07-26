@@ -1,15 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://xb43cltwar74"]
+[gd_scene load_steps=7 format=3 uid="uid://xb43cltwar74"]
 
 [ext_resource type="Script" path="res://Test Zone/test_zone.gd" id="1_mbgak"]
-[ext_resource type="Texture2D" uid="uid://calso57vgsngd" path="res://NewAssets/splash screen.png" id="1_tgwem"]
-[ext_resource type="Texture2D" uid="uid://nw6y6cgrktfd" path="res://NewAssets/tiles-1.png" id="2_hvd4c"]
 [ext_resource type="PackedScene" uid="uid://p6eenj0m0n16" path="res://Gladiator/gladiator.tscn" id="2_jpqrh"]
-[ext_resource type="Texture2D" uid="uid://tamioe63q72x" path="res://NewAssets/tiles.png" id="2_l1523"]
 [ext_resource type="PackedScene" uid="uid://c6vleknr72bsi" path="res://Weapons/Gun/gun.tscn" id="3_vellk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_og8bp"]
 resource_name = "Abstrait"
-texture = ExtResource("2_l1523")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -212,7 +208,6 @@ texture_region_size = Vector2i(64, 64)
 4:9/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sn4nw"]
-texture = ExtResource("2_hvd4c")
 texture_region_size = Vector2i(64, 64)
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -387,4 +382,3 @@ scroll_base_offset = Vector2(20, 20)
 [node name="SplashScreen" type="Sprite2D" parent="ParallaxBackground"]
 position = Vector2(-7.50006, -2.5)
 scale = Vector2(1.8167, 1.8167)
-texture = ExtResource("1_tgwem")

@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://xfe5hql3bhwr"]
+
+[ext_resource type="Script" path="res://Gladiator/Arms/arms.gd" id="1_iroih"]
+[ext_resource type="Texture2D" uid="uid://47g43icr8dpi" path="res://NewAssets/CHARACTERS/WOKTOPUTE/FALL/FALL ARM/FALL ARM.png" id="2_fam7s"]
+[ext_resource type="Texture2D" uid="uid://c7fmp8jhh8jd1" path="res://NewAssets/CHARACTERS/WOKTOPUTE/IDLE/IDLE ARM/IDLE ARM.png" id="3_uk4ho"]
+[ext_resource type="Texture2D" uid="uid://cpb7b6htev0qw" path="res://NewAssets/CHARACTERS/WOKTOPUTE/JUMP/JUMP ARM/JUMP ARM 01.png" id="4_ojwxg"]
+[ext_resource type="Texture2D" uid="uid://c57oryubd1u6x" path="res://NewAssets/CHARACTERS/WOKTOPUTE/RUN/RUN ARM/RUN ARM 01.png" id="5_3jq07"]
+[ext_resource type="Texture2D" uid="uid://0mhnlmrlngak" path="res://NewAssets/CHARACTERS/WOKTOPUTE/RUN/RUN ARM/RUN ARM 02.png" id="6_10nnv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3afmq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_fam7s")
+}],
+"loop": true,
+"name": &"Fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_uk4ho")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ojwxg")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_3jq07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_10nnv")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 4.0
+}]
+
+[node name="Arms" type="Node2D"]
+script = ExtResource("1_iroih")
+
+[node name="Animator" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_3afmq")
+animation = &"Run"

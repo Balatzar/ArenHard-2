@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxqqcv0xild6x"
-path="res://.godot/imported/JUMP BODY 01.png-ceeccf23e9f5eef2b9362a4c0dd16295.ctex"
+uid="uid://b1qchkmi6qsy7"
+path="res://.godot/imported/JUMP BODY 01.png-dd09c0f3baaec1159547789346f88284.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://NewAssets/Characters/TRICOT1/JUMP/JUMP BODY/JUMP BODY 01.png"
-dest_files=["res://.godot/imported/JUMP BODY 01.png-ceeccf23e9f5eef2b9362a4c0dd16295.ctex"]
+source_file="res://NewAssets/CHARACTERS/TRICOT1/JUMP/JUMP BODY/JUMP BODY 01.png"
+dest_files=["res://.godot/imported/JUMP BODY 01.png-dd09c0f3baaec1159547789346f88284.ctex"]
 
 [params]
 

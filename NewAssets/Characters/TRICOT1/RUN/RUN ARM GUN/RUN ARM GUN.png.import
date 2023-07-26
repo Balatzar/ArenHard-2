@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://beww0iwblx4lu"
-path="res://.godot/imported/RUN ARM GUN.png-50215098cb9dd92bc2be6a54be2da05e.ctex"
+uid="uid://bjk24wm1fm33j"
+path="res://.godot/imported/RUN ARM GUN.png-0e758a9f977f20cc0c359b53a5f12c13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM GUN/RUN ARM GUN.png"
-dest_files=["res://.godot/imported/RUN ARM GUN.png-50215098cb9dd92bc2be6a54be2da05e.ctex"]
+source_file="res://NewAssets/CHARACTERS/TRICOT1/RUN/RUN ARM GUN/RUN ARM GUN.png"
+dest_files=["res://.godot/imported/RUN ARM GUN.png-0e758a9f977f20cc0c359b53a5f12c13.ctex"]
 
 [params]
 

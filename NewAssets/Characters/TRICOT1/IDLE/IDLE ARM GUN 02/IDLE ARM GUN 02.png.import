@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dojq6rynw020s"
-path="res://.godot/imported/IDLE ARM GUN 02.png-25d0feb1e99924b3a8699c7165916724.ctex"
+uid="uid://dqrfn536vujsf"
+path="res://.godot/imported/IDLE ARM GUN 02.png-7714e9772041a035f28d753a6f2bcc3c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://NewAssets/Characters/TRICOT1/IDLE/IDLE ARM GUN 02/IDLE ARM GUN 02.png"
-dest_files=["res://.godot/imported/IDLE ARM GUN 02.png-25d0feb1e99924b3a8699c7165916724.ctex"]
+source_file="res://NewAssets/CHARACTERS/TRICOT1/IDLE/IDLE ARM GUN 02/IDLE ARM GUN 02.png"
+dest_files=["res://.godot/imported/IDLE ARM GUN 02.png-7714e9772041a035f28d753a6f2bcc3c.ctex"]
 
 [params]
 

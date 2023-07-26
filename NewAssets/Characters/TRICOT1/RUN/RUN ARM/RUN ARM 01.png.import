@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cu4kpdil3pqbm"
-path="res://.godot/imported/RUN ARM 01.png-37de002aa8f8e4b65f70a8685105e025.ctex"
+uid="uid://bp6k0rin3daxy"
+path="res://.godot/imported/RUN ARM 01.png-2d709aa510f21836ebfaccc35a9a7496.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://NewAssets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 01.png"
-dest_files=["res://.godot/imported/RUN ARM 01.png-37de002aa8f8e4b65f70a8685105e025.ctex"]
+source_file="res://NewAssets/CHARACTERS/TRICOT1/RUN/RUN ARM/RUN ARM 01.png"
+dest_files=["res://.godot/imported/RUN ARM 01.png-2d709aa510f21836ebfaccc35a9a7496.ctex"]
 
 [params]
 

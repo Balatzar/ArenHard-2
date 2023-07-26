@@ -5,10 +5,13 @@ extends CharacterBody2D
 @export var JUMP_VELOCITY = -400
 @export var JUMP_HOLD_VELOCITY = 40.0 # Additional jump velocity when holding the button
 @export var MAX_JUMP_TIME = 0.50
+@export_range(0.0, 1.0) var FRICTION = 0.1
+@export_range(0.0 , 1.0) var ACCELERATION = 0.25
 
-@onready var animator = get_node("Body")
-@onready var arm_gun = get_node("ArmGun")
-@onready var arms = get_node("Arms")
+@onready var animator = $Body
+#@onready var arm_gun = get_node("Arms")
+#@onready var armsAnimator = get_node("Arms/Animator")
+@onready var arms = $Arms
 @onready var arm_pivot = $ArmPivot
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -42,24 +45,17 @@ func _physics_process(delta):
 		velocity.y -= JUMP_HOLD_VELOCITY * jump_hold_time
 	else:
 		is_jumping = false
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
+
 	var direction = Input.get_axis("ui_left", "ui_right")
-	# if direction == 1:
-		# animator.scale.x = 1
-		# arms.scale.x = 1
-	# elif direction == -1:
-		# animator.scale.x = -1
-		# arms.scale.x = -1
-		
+
 	if direction:
-		velocity.x = direction * SPEED
+		velocity.x = lerp(velocity.x, direction * SPEED, ACCELERATION)
 		if velocity.y == 0:
 			animator.play("Run")
 			arms.play("Run")
 			# backArm.play("Run")
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.x = lerp(velocity.x, 0.0, FRICTION)
 		if velocity.y == 0:
 			animator.play("Idle")
 			arms.play("Idle")
