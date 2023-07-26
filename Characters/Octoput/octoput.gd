@@ -11,7 +11,7 @@ extends CharacterBody2D
 @onready var animator = $Body
 #@onready var arm_gun = get_node("Arms")
 #@onready var armsAnimator = get_node("Arms/Animator")
-@onready var arms = $Arms
+@onready var arms = get_node("Arms/Animator")
 @onready var arm_pivot = $ArmPivot
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -53,7 +53,6 @@ func _physics_process(delta):
 		if velocity.y == 0:
 			animator.play("Run")
 			arms.play("Run")
-			# backArm.play("Run")
 	else:
 		velocity.x = lerp(velocity.x, 0.0, FRICTION)
 		if velocity.y == 0:
@@ -62,11 +61,9 @@ func _physics_process(delta):
 	
 	if velocity.y < 0:
 		animator.play("Jump")
-		# backArm.play("Jump")
 		arms.play("Jump")
 	elif velocity.y > 0:
 		animator.play("Fall")
-		# backArm.play("Jump")
 		arms.play("Fall")
 
 	move_and_slide()
