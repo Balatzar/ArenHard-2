@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://cblnn4nwym6so"]
 
 [ext_resource type="Texture2D" uid="uid://cgft4lvx62vp" path="res://Assets/Tiles/tiles.png" id="1_ks5e4"]
-[ext_resource type="Texture2D" uid="uid://du133lyc7p2ew" path="res://Assets/Arena/Mattepainting.png" id="3_6h7gk"]
+[ext_resource type="Texture2D" uid="uid://82j0jfw18hpb" path="res://Assets/Arena/background2.webp" id="3_8lro1"]
 [ext_resource type="PackedScene" uid="uid://c6vleknr72bsi" path="res://Weapons/Gun/gun.tscn" id="3_it8c7"]
-[ext_resource type="Texture2D" uid="uid://dta7k0imlwaxe" path="res://Assets/Arena/ground.png" id="4_6uffm"]
+[ext_resource type="Texture2D" uid="uid://eg042sdk115d" path="res://Assets/Arena/foreground.webp" id="4_u34b7"]
 [ext_resource type="PackedScene" uid="uid://bf6g4qm3o1uhb" path="res://Characters/Tricot1/tricot1.tscn" id="6_0trx1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mwnj8"]
@@ -222,6 +222,7 @@ texture_region_size = Vector2i(64, 64)
 6:6/0 = 0
 6:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:6/0/physics_layer_0/angular_velocity = 0.0
+6:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 7:6/0 = 0
 7:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:6/0/physics_layer_0/angular_velocity = 0.0
@@ -369,7 +370,7 @@ sources/0 = SubResource("TileSetAtlasSource_mwnj8")
 tile_set = SubResource("TileSet_46mo4")
 cell_quadrant_size = 64
 format = 2
-layer_0/tile_data = PackedInt32Array(-655342, 0, 3, -655341, 131072, 2, -655340, 131072, 2, -655339, 131072, 2, -720876, 65536, 2, -720877, 65536, 2, -786412, 65536, 2, -196605, 262144, 6, -196604, 262144, 6, -196603, 262144, 6, -196602, 262144, 6, -196601, 262144, 6, -196600, 262144, 6, -196599, 262144, 6, -196598, 262144, 6, -196597, 262144, 6, -196596, 262144, 6, -196595, 262144, 6, -196594, 327680, 6, -196606, 196608, 6)
+layer_0/tile_data = PackedInt32Array(-655342, 0, 3, -655341, 131072, 2, -655340, 131072, 2, -655339, 131072, 2, -720876, 65536, 2, -720877, 65536, 2, -786412, 65536, 2, -196605, 262144, 6, -196604, 262144, 6, -196603, 262144, 6, -196602, 262144, 6, -196601, 262144, 6, -196600, 262144, 6, -196599, 262144, 6, -196598, 262144, 6, -196597, 262144, 6, -196596, 262144, 6, -196595, 262144, 6, -196594, 327680, 6, -196606, 196608, 6, 983004, 393216, 6, 983005, 393216, 6, 983006, 393216, 6, 983007, 393216, 6, 983008, 393216, 6, 983009, 393216, 6, 983010, 393216, 6, 983011, 393216, 6, 983012, 393216, 6, 983013, 393216, 6, 983014, 393216, 6, 983015, 393216, 6, 983016, 393216, 6, 983017, 393216, 6, 983018, 393216, 6, 983019, 393216, 6, 983020, 393216, 6, 983021, 393216, 6, 983022, 393216, 6, 983023, 393216, 6, 983024, 393216, 6, 983025, 393216, 6, 983026, 393216, 6, 983027, 393216, 6, 983028, 393216, 6, 983029, 393216, 6, 983030, 393216, 6, 983031, 393216, 6, 983032, 393216, 6, 983033, 393216, 6, 983034, 393216, 6, 983035, 393216, 6, 983036, 393216, 6, 983037, 393216, 6, 983038, 393216, 6, 983039, 393216, 6, 917504, 393216, 6, 917505, 393216, 6, 917506, 393216, 6, 917507, 393216, 6, 917508, 393216, 6, 917509, 393216, 6, 917510, 393216, 6, 917511, 393216, 6, 917512, 393216, 6, 917513, 393216, 6, 917514, 393216, 6, 917515, 393216, 6, 917516, 393216, 6, 917517, 393216, 6, 917518, 393216, 6, 917519, 393216, 6, 917520, 393216, 6, 917521, 393216, 6, 917522, 393216, 6, 917523, 393216, 6, 917524, 393216, 6, 917525, 393216, 6, 917526, 393216, 6, 917527, 393216, 6, 917528, 393216, 6, 917529, 393216, 6, 917530, 393216, 6, 917531, 393216, 6, 917532, 393216, 6, 917533, 393216, 6, 917534, 393216, 6)
 layer_1/name = ""
 layer_1/enabled = true
 layer_1/modulate = Color(1, 1, 1, 1)
@@ -386,23 +387,22 @@ position = Vector2(601, -228)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 follow_viewport_enabled = true
-follow_viewport_scale = 0.5
+follow_viewport_scale = 0.7
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground"]
-position = Vector2(187, -705)
-scale = Vector2(3.67892, 3.67892)
-texture = ExtResource("3_6h7gk")
+position = Vector2(2.08165e-12, -524)
+texture = ExtResource("3_8lro1")
 
 [node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
 follow_viewport_enabled = true
-follow_viewport_scale = 0.9
-scroll_offset = Vector2(100, 10)
+follow_viewport_scale = 0.95
+scroll_offset = Vector2(500, 10)
 scroll_ignore_camera_zoom = true
 
 [node name="Ground" type="Sprite2D" parent="ParallaxBackground2"]
-position = Vector2(185.556, -732.222)
-scale = Vector2(2.80247, 2.80247)
-texture = ExtResource("4_6uffm")
+position = Vector2(2.08165e-12, -350)
+scale = Vector2(0.794286, 0.794286)
+texture = ExtResource("4_u34b7")
 
 [node name="Tricot1" parent="." instance=ExtResource("6_0trx1")]
 position = Vector2(322, -351)
