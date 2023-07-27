@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8hwonyreyv2y"]
+
+[ext_resource type="Script" path="res://Objects/WeaponSpawn/weapon_spawn.gd" id="1_2qf5n"]
+
+[node name="WeaponSpawn" type="Marker2D" groups=["WeaponSpawns"]]
+script = ExtResource("1_2qf5n")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -17.0
+offset_top = -15.0
+offset_right = 19.0
+offset_bottom = 19.0
