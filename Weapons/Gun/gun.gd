@@ -15,6 +15,5 @@ func _process(delta):
 
 func _on_body_entered(body):
 	if body.visibility_layer == 1:
-		var weapon = Weapon.instantiate()
-		body.take_gun(weapon)
+		body.take_gun("Gun")
 		queue_free()

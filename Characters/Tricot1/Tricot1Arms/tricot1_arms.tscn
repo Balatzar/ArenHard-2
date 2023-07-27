@@ -1,0 +1,61 @@
+[gd_scene load_steps=10 format=3 uid="uid://cdpxdx37alsmc"]
+
+[ext_resource type="Script" path="res://Characters/Octoput/Arms/octoput_arms.gd" id="1_x2ine"]
+[ext_resource type="Texture2D" uid="uid://bvl00iw763xx" path="res://Assets/Characters/TRICOT1/FALL/FALL ARM/FALL ARM 01.png" id="2_ix7rx"]
+[ext_resource type="Texture2D" uid="uid://d3s38kfoyme7k" path="res://Assets/Characters/TRICOT1/IDLE/IDLE ARM BASIC/IDLE ARM BASIC.png" id="3_nfeg6"]
+[ext_resource type="Texture2D" uid="uid://bc2ewthxmt353" path="res://Assets/Characters/TRICOT1/JUMP/JUMP ARM/JUMP ARM.png" id="4_p530v"]
+[ext_resource type="Texture2D" uid="uid://bp6k0rin3daxy" path="res://Assets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 01.png" id="5_i3ein"]
+[ext_resource type="Texture2D" uid="uid://dg2a40axv1gu8" path="res://Assets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 02.png" id="6_45vgk"]
+[ext_resource type="Texture2D" uid="uid://ch0c2xejjt57d" path="res://Assets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 03.png" id="7_jhbmq"]
+[ext_resource type="Texture2D" uid="uid://ctm2wwwpnrqrp" path="res://Assets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 04.png" id="8_xg0qw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3afmq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ix7rx")
+}],
+"loop": true,
+"name": &"Fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_nfeg6")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_p530v")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_i3ein")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_45vgk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jhbmq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xg0qw")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 4.0
+}]
+
+[node name="Tricot1Arms" type="Node2D"]
+script = ExtResource("1_x2ine")
+
+[node name="Animator" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_3afmq")
+animation = &"Run"

@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=3 uid="uid://xfe5hql3bhwr"]
 
 [ext_resource type="Script" path="res://Characters/Octoput/Arms/octoput_arms.gd" id="1_h43ny"]
-[ext_resource type="Texture2D" uid="uid://47g43icr8dpi" path="res://NewAssets/CHARACTERS/WOKTOPUTE/FALL/FALL ARM/FALL ARM.png" id="2_xftog"]
-[ext_resource type="Texture2D" uid="uid://c7fmp8jhh8jd1" path="res://NewAssets/CHARACTERS/WOKTOPUTE/IDLE/IDLE ARM/IDLE ARM.png" id="3_ucfkx"]
-[ext_resource type="Texture2D" uid="uid://cpb7b6htev0qw" path="res://NewAssets/CHARACTERS/WOKTOPUTE/JUMP/JUMP ARM/JUMP ARM 01.png" id="4_38fns"]
-[ext_resource type="Texture2D" uid="uid://c57oryubd1u6x" path="res://NewAssets/CHARACTERS/WOKTOPUTE/RUN/RUN ARM/RUN ARM 01.png" id="5_u1imi"]
-[ext_resource type="Texture2D" uid="uid://0mhnlmrlngak" path="res://NewAssets/CHARACTERS/WOKTOPUTE/RUN/RUN ARM/RUN ARM 02.png" id="6_avjbe"]
+[ext_resource type="Texture2D" uid="uid://47g43icr8dpi" path="res://Assets/Characters/WOKTOPUTE/FALL/FALL ARM/FALL ARM.png" id="2_xftog"]
+[ext_resource type="Texture2D" uid="uid://c7fmp8jhh8jd1" path="res://Assets/Characters/WOKTOPUTE/IDLE/IDLE ARM/IDLE ARM.png" id="3_ucfkx"]
+[ext_resource type="Texture2D" uid="uid://cpb7b6htev0qw" path="res://Assets/Characters/WOKTOPUTE/JUMP/JUMP ARM/JUMP ARM 01.png" id="4_38fns"]
+[ext_resource type="Texture2D" uid="uid://c57oryubd1u6x" path="res://Assets/Characters/WOKTOPUTE/RUN/RUN ARM/RUN ARM 01.png" id="5_u1imi"]
+[ext_resource type="Texture2D" uid="uid://0mhnlmrlngak" path="res://Assets/Characters/WOKTOPUTE/RUN/RUN ARM/RUN ARM 02.png" id="6_avjbe"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3afmq"]
 animations = [{

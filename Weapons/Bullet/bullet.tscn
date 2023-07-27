@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://buncutx63xmxk"]
 
-[ext_resource type="Texture2D" uid="uid://cbpci703es8tv" path="res://Assets/Tests/Stickman/laserRed01.png" id="1_awl8n"]
 [ext_resource type="Script" path="res://Weapons/Bullet/bullet.gd" id="1_hs50h"]
+[ext_resource type="Texture2D" uid="uid://cbpci703es8tv" path="res://Assets/Weapons/laserRed01.png" id="2_p2qa7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_586iw"]
 radius = 4.0
@@ -19,6 +19,6 @@ shape = SubResource("CapsuleShape2D_586iw")
 [node name="LaserRed01" type="Sprite2D" parent="."]
 position = Vector2(1, 0)
 rotation = 1.5708
-texture = ExtResource("1_awl8n")
+texture = ExtResource("2_p2qa7")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

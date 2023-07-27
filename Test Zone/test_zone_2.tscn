@@ -1,14 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://dbos5foi4he81"]
+[gd_scene load_steps=8 format=3 uid="uid://cblnn4nwym6so"]
 
-[ext_resource type="Texture2D" uid="uid://cgft4lvx62vp" path="res://NewAssets/Tiles/tiles.png" id="1_6rihc"]
-[ext_resource type="PackedScene" uid="uid://p6eenj0m0n16" path="res://Characters/Octoput/octoput.tscn" id="1_eowln"]
+[ext_resource type="Texture2D" uid="uid://cgft4lvx62vp" path="res://Assets/Tiles/tiles.png" id="1_ks5e4"]
+[ext_resource type="Texture2D" uid="uid://du133lyc7p2ew" path="res://Assets/Arena/Mattepainting.png" id="3_6h7gk"]
 [ext_resource type="PackedScene" uid="uid://c6vleknr72bsi" path="res://Weapons/Gun/gun.tscn" id="3_it8c7"]
-[ext_resource type="Texture2D" uid="uid://du133lyc7p2ew" path="res://NewAssets/Arena/Mattepainting.png" id="4_a8g4c"]
-[ext_resource type="Texture2D" uid="uid://dta7k0imlwaxe" path="res://NewAssets/Arena/ground.png" id="5_f7h6a"]
+[ext_resource type="Texture2D" uid="uid://dta7k0imlwaxe" path="res://Assets/Arena/ground.png" id="4_6uffm"]
 [ext_resource type="PackedScene" uid="uid://bf6g4qm3o1uhb" path="res://Characters/Tricot1/tricot1.tscn" id="6_0trx1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mwnj8"]
-texture = ExtResource("1_6rihc")
+texture = ExtResource("1_ks5e4")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -367,7 +366,7 @@ follow_viewport_scale = 0.5
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground"]
 position = Vector2(187, -705)
 scale = Vector2(3.67892, 3.67892)
-texture = ExtResource("4_a8g4c")
+texture = ExtResource("3_6h7gk")
 
 [node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
 follow_viewport_enabled = true
@@ -378,10 +377,7 @@ scroll_ignore_camera_zoom = true
 [node name="Ground" type="Sprite2D" parent="ParallaxBackground2"]
 position = Vector2(185.556, -732.222)
 scale = Vector2(2.80247, 2.80247)
-texture = ExtResource("5_f7h6a")
-
-[node name="Octoput" parent="." instance=ExtResource("1_eowln")]
-position = Vector2(387, -436)
+texture = ExtResource("4_6uffm")
 
 [node name="Tricot1" parent="." instance=ExtResource("6_0trx1")]
-position = Vector2(125, -440)
+position = Vector2(302, -393)
