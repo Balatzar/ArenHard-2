@@ -12,8 +12,15 @@ class_name Character
 @export var characterName : String
 @export var max_health := 100
 
+@export var player := 1 :
+	set(id):
+		player = id
+		$PlayerInput.set_multiplayer_authority(id)
+
 @onready var animator = $Body
 @onready var health = max_health
+@onready var input = $PlayerInput
+
 var arms
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -26,6 +33,7 @@ var jump_hold_time = 0.0 # The amount of time the jump button has been held down
 
 
 func _ready():
+	print(input)
 	animator.play("Idle")
 	print("instance arms")
 	arms = Arms.instantiate()
@@ -35,30 +43,34 @@ func _ready():
 	$HealthBar.max_value = max_health
 	$HealthBar.value = max_health
 
+	if player == multiplayer.get_unique_id():
+		$Camera2D.enabled = true
+
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
 
 	# Handle Jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor() and not is_jumping:
+	if input.jumping and is_on_floor() and not is_jumping:
 		velocity.y = JUMP_VELOCITY
 		is_jumping = true
 		
 		jump_hold_time = 0.0
-	elif Input.is_action_just_released("ui_accept") or jump_hold_time >= MAX_JUMP_TIME:
+	elif input.just_jumped or jump_hold_time >= MAX_JUMP_TIME:
 		is_jumping = false
 		
-	if is_jumping and Input.is_action_pressed("ui_accept") and jump_hold_time < MAX_JUMP_TIME and velocity.y < 0:
+	if is_jumping and input.jumping and jump_hold_time < MAX_JUMP_TIME and velocity.y < 0:
 		jump_hold_time += delta
 		velocity.y -= JUMP_HOLD_VELOCITY * jump_hold_time
 	else:
 		is_jumping = false
+	
+	input.jumping = false
+	input.just_jumped = false
 
-	var direction = Input.get_axis("ui_left", "ui_right")
-
-	if direction:
-		velocity.x = lerp(velocity.x, direction * SPEED, ACCELERATION)
+	if input.direction:
+		velocity.x = lerp(velocity.x, input.direction * SPEED, ACCELERATION)
 		if velocity.y == 0:
 			animator.play("Run")
 			arms.animator.play("Run")

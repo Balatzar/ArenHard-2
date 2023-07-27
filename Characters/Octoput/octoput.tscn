@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://p6eenj0m0n16"]
+[gd_scene load_steps=13 format=3 uid="uid://p6eenj0m0n16"]
 
 [ext_resource type="Script" path="res://Characters/Octoput/octoput.gd" id="1_phwdg"]
 [ext_resource type="Texture2D" uid="uid://bknj14d6l1t30" path="res://Assets/Characters/OCTOPUT/BODY/FALL/BODY FALL 01.png" id="2_sbjjl"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cmuspsndo35h3" path="res://Assets/Characters/OCTOPUT/BODY/RUN/BODY RUN 02.png" id="7_74sld"]
 [ext_resource type="PackedScene" uid="uid://xfe5hql3bhwr" path="res://Characters/Octoput/OctoputArms/octoput_arms.tscn" id="8_o5sm8"]
 [ext_resource type="PackedScene" uid="uid://1yx2l7otx2op" path="res://Objects/HealthBar/health_bar.tscn" id="9_d2h0e"]
+[ext_resource type="PackedScene" uid="uid://b5x0dhuae5l8s" path="res://Objects/PlayerInput/player_input.tscn" id="10_uqmdp"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mv1rx"]
 animations = [{
@@ -80,3 +81,5 @@ offset_left = -41.0
 offset_top = -109.0
 offset_right = 44.0
 offset_bottom = -82.0
+
+[node name="PlayerInput" parent="." instance=ExtResource("10_uqmdp")]

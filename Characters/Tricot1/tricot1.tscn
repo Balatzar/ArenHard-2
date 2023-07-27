@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bf6g4qm3o1uhb"]
+[gd_scene load_steps=15 format=3 uid="uid://bf6g4qm3o1uhb"]
 
 [ext_resource type="Script" path="res://Characters/Tricot1/tricot1.gd" id="1_q8ajm"]
 [ext_resource type="PackedScene" uid="uid://cdpxdx37alsmc" path="res://Characters/Tricot1/Tricot1Arms/tricot1_arms.tscn" id="2_af2hn"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cp27pmso78kw5" path="res://Assets/Characters/TRICOT1/BODY/RUN/BODY RUN 03.png" id="9_ikmf1"]
 [ext_resource type="Texture2D" uid="uid://dpojtas48tktf" path="res://Assets/Characters/TRICOT1/BODY/RUN/BODY RUN 04.png" id="10_cie8x"]
 [ext_resource type="PackedScene" uid="uid://1yx2l7otx2op" path="res://Objects/HealthBar/health_bar.tscn" id="10_x034o"]
+[ext_resource type="PackedScene" uid="uid://b5x0dhuae5l8s" path="res://Objects/PlayerInput/player_input.tscn" id="12_b42s0"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mv1rx"]
 animations = [{
@@ -97,3 +98,5 @@ offset_left = -41.0
 offset_top = -109.0
 offset_right = 44.0
 offset_bottom = -82.0
+
+[node name="PlayerInput" parent="." instance=ExtResource("12_b42s0")]
