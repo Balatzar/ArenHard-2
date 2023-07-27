@@ -1,0 +1,149 @@
+[gd_scene load_steps=17 format=3 uid="uid://1xu0rx2bfcy6"]
+
+[ext_resource type="Script" path="res://Characters/Octoput/OctoputArmMachineGun/octoput_arm_machine_gun.gd" id="1_x08t4"]
+[ext_resource type="PackedScene" uid="uid://buncutx63xmxk" path="res://Weapons/Bullet/bullet.tscn" id="2_bjypn"]
+[ext_resource type="Texture2D" uid="uid://dkysx0wrhsa8h" path="res://Assets/Characters/OCTOPUT/WEAPONS/MACHINE GUN/MG IDLE/MG IDLE.png" id="2_x7v55"]
+[ext_resource type="Texture2D" uid="uid://bpvnin68p24m4" path="res://Assets/Characters/OCTOPUT/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_01.png" id="3_8lxsm"]
+[ext_resource type="Texture2D" uid="uid://8syg3ige7rm" path="res://Assets/Characters/OCTOPUT/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_02.png" id="4_itji8"]
+[ext_resource type="Texture2D" uid="uid://xcw45jsmhous" path="res://Assets/Characters/OCTOPUT/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_03.png" id="5_46amj"]
+[ext_resource type="Texture2D" uid="uid://bgej4cluw4emq" path="res://Assets/Characters/OCTOPUT/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_04.png" id="6_b8nbo"]
+[ext_resource type="Texture2D" uid="uid://b2tdau71euye5" path="res://Assets/Characters/OCTOPUT/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_05.png" id="7_egc61"]
+[ext_resource type="Texture2D" uid="uid://c70rdytuw8x1x" path="res://Assets/Characters/OCTOPUT/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_06.png" id="8_sk5m8"]
+[ext_resource type="Texture2D" uid="uid://dj8bdga3ljugq" path="res://Assets/Characters/OCTOPUT/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_07.png" id="9_4ot7b"]
+[ext_resource type="Texture2D" uid="uid://df4gtc11rgfw3" path="res://Assets/Characters/OCTOPUT/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_08.png" id="10_herfk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_26qp0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_x7v55")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_8lxsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_itji8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_46amj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_b8nbo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_egc61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_sk5m8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4ot7b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_herfk")
+}],
+"loop": false,
+"name": &"Shoot",
+"speed": 24.0
+}]
+
+[sub_resource type="Animation" id="Animation_8s5m7"]
+resource_name = "Idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Animator:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Animator:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_gr83o"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Animator:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_erpnl"]
+resource_name = "Shoot"
+length = 0.14
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Animator:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Shoot"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Animator:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.02, 0.04, 0.06, 0.08, 0.1, 0.12),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sjha8"]
+_data = {
+"Idle": SubResource("Animation_8s5m7"),
+"RESET": SubResource("Animation_gr83o"),
+"Shoot": SubResource("Animation_erpnl")
+}
+
+[node name="ArmMachineGun" type="Node2D"]
+script = ExtResource("1_x08t4")
+Bullet = ExtResource("2_bjypn")
+
+[node name="Animator" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.08165e-12, 2.08165e-12)
+sprite_frames = SubResource("SpriteFrames_26qp0")
+animation = &"Idle"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_sjha8")
+}
+
+[node name="Muzzle" type="Marker2D" parent="."]
+position = Vector2(76, 10)

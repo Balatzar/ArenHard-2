@@ -10,6 +10,7 @@ size = Vector2(46, 28)
 light_mask = 2
 visibility_layer = 2
 script = ExtResource("1_3mpkn")
+weapon_name = "machine_gun"
 
 [node name="PropGun" type="Sprite2D" parent="."]
 position = Vector2(16, -1.99999)

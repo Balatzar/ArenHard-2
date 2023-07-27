@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://p6eenj0m0n16"]
+[gd_scene load_steps=12 format=3 uid="uid://p6eenj0m0n16"]
 
 [ext_resource type="Script" path="res://Characters/Octoput/octoput.gd" id="1_phwdg"]
 [ext_resource type="Texture2D" uid="uid://bknj14d6l1t30" path="res://Assets/Characters/OCTOPUT/BODY/FALL/BODY FALL 01.png" id="2_sbjjl"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://d4cuq3y5nfa3a" path="res://Assets/Characters/OCTOPUT/BODY/RUN/BODY RUN 01.png" id="6_0ttlm"]
 [ext_resource type="Texture2D" uid="uid://cmuspsndo35h3" path="res://Assets/Characters/OCTOPUT/BODY/RUN/BODY RUN 02.png" id="7_74sld"]
 [ext_resource type="PackedScene" uid="uid://xfe5hql3bhwr" path="res://Characters/Octoput/OctoputArms/octoput_arms.tscn" id="8_o5sm8"]
+[ext_resource type="PackedScene" uid="uid://1yx2l7otx2op" path="res://Objects/HealthBar/health_bar.tscn" id="9_d2h0e"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mv1rx"]
 animations = [{
@@ -73,3 +74,9 @@ shape = SubResource("CapsuleShape2D_rqygn")
 
 [node name="ArmPivot" type="Marker2D" parent="."]
 position = Vector2(0, -5)
+
+[node name="HealthBar" parent="." instance=ExtResource("9_d2h0e")]
+offset_left = -41.0
+offset_top = -109.0
+offset_right = 44.0
+offset_bottom = -82.0

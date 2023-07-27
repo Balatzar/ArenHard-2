@@ -1,14 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://bgbcx5i4ta3n0"]
+[gd_scene load_steps=9 format=3 uid="uid://duuoyaelhruqt"]
 
-[ext_resource type="Texture2D" uid="uid://cgft4lvx62vp" path="res://Assets/Tiles/tiles.png" id="1_5k6ri"]
-[ext_resource type="PackedScene" uid="uid://c6vleknr72bsi" path="res://Weapons/Gun/gun.tscn" id="2_nblr2"]
-[ext_resource type="Texture2D" uid="uid://du133lyc7p2ew" path="res://Assets/Arena/Mattepainting.png" id="3_u1ghr"]
-[ext_resource type="Texture2D" uid="uid://dta7k0imlwaxe" path="res://Assets/Arena/ground.png" id="4_05ik5"]
-[ext_resource type="PackedScene" uid="uid://p6eenj0m0n16" path="res://Characters/Octoput/octoput.tscn" id="6_a6rjm"]
-[ext_resource type="PackedScene" uid="uid://5rsryhm5k32w" path="res://Weapons/MachineGun/machine_gun.tscn" id="6_os3bi"]
+[ext_resource type="Texture2D" uid="uid://cgft4lvx62vp" path="res://Assets/Tiles/tiles.png" id="1_ne7is"]
+[ext_resource type="PackedScene" uid="uid://c6vleknr72bsi" path="res://Weapons/Gun/gun.tscn" id="2_7ltbm"]
+[ext_resource type="Texture2D" uid="uid://du133lyc7p2ew" path="res://Assets/Arena/Mattepainting.png" id="3_8qbvh"]
+[ext_resource type="Texture2D" uid="uid://dta7k0imlwaxe" path="res://Assets/Arena/ground.png" id="4_ix52d"]
+[ext_resource type="PackedScene" uid="uid://p6eenj0m0n16" path="res://Characters/Octoput/octoput.tscn" id="5_ic8lc"]
+[ext_resource type="PackedScene" uid="uid://5rsryhm5k32w" path="res://Weapons/MachineGun/machine_gun.tscn" id="6_rxyhk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mwnj8"]
-texture = ExtResource("1_5k6ri")
+texture = ExtResource("1_ne7is")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -357,7 +357,7 @@ layer_1/y_sort_origin = 0
 layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array()
 
-[node name="Gun" parent="." instance=ExtResource("2_nblr2")]
+[node name="Gun" parent="." instance=ExtResource("2_7ltbm")]
 position = Vector2(575, -266)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -367,7 +367,7 @@ follow_viewport_scale = 0.5
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground"]
 position = Vector2(187, -705)
 scale = Vector2(3.67892, 3.67892)
-texture = ExtResource("3_u1ghr")
+texture = ExtResource("3_8qbvh")
 
 [node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
 follow_viewport_enabled = true
@@ -378,10 +378,10 @@ scroll_ignore_camera_zoom = true
 [node name="Ground" type="Sprite2D" parent="ParallaxBackground2"]
 position = Vector2(185.556, -732.222)
 scale = Vector2(2.80247, 2.80247)
-texture = ExtResource("4_05ik5")
+texture = ExtResource("4_ix52d")
 
-[node name="Octoput" parent="." instance=ExtResource("6_a6rjm")]
+[node name="Octoput" parent="." instance=ExtResource("5_ic8lc")]
 position = Vector2(317, -373)
 
-[node name="MachineGun" parent="." instance=ExtResource("6_os3bi")]
+[node name="MachineGun" parent="." instance=ExtResource("6_rxyhk")]
 position = Vector2(762, -269)

@@ -3,13 +3,16 @@ extends Node2D
 class_name WeaponArm
 
 @export var Bullet : PackedScene
-
 @export var max_rotation_up = -1
 @export var max_rotation_down = 1.8
 @export var cooldown = 1.00
+
 @onready var animator = $AnimationPlayer
 
 var shooting = false
+
+func kind():
+	return "weapon"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
