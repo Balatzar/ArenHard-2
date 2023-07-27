@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cgft4lvx62vp" path="res://Assets/Tiles/tiles.png" id="2_okk1k"]
 [ext_resource type="PackedScene" uid="uid://c6vleknr72bsi" path="res://Weapons/Gun/gun.tscn" id="3_06aex"]
-[ext_resource type="Texture2D" uid="uid://82j0jfw18hpb" path="res://Assets/Arena/background2.webp" id="4_pv726"]
+[ext_resource type="Texture2D" uid="uid://bymg8bb57e8f7" path="res://Assets/Arena/03.png" id="3_pxhcp"]
 [ext_resource type="Texture2D" uid="uid://eg042sdk115d" path="res://Assets/Arena/foreground.webp" id="5_r03aq"]
 [ext_resource type="PackedScene" uid="uid://bf6g4qm3o1uhb" path="res://Characters/Tricot1/tricot1.tscn" id="6_qh384"]
 
@@ -390,9 +390,9 @@ follow_viewport_enabled = true
 follow_viewport_scale = 0.7
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground"]
-position = Vector2(2.08165e-12, -392.857)
-scale = Vector2(1.13113, 1.243)
-texture = ExtResource("4_pv726")
+position = Vector2(2.08165e-12, -675.714)
+scale = Vector2(3.831, 4.211)
+texture = ExtResource("3_pxhcp")
 
 [node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
 follow_viewport_enabled = true
