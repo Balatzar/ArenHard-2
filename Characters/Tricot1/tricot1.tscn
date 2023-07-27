@@ -60,6 +60,8 @@ height = 180.0
 
 [node name="Tricot1" type="CharacterBody2D"]
 script = ExtResource("1_q8ajm")
+JUMP_VELOCITY = -835
+JUMP_HOLD_VELOCITY = 50.0
 Arms = ExtResource("2_af2hn")
 characterName = "Tricot1"
 

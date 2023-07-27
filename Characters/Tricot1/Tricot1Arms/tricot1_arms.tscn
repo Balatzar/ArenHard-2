@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://cdpxdx37alsmc"]
 
-[ext_resource type="Script" path="res://Characters/Octoput/Arms/octoput_arms.gd" id="1_x2ine"]
+[ext_resource type="Script" path="res://Characters/Octoput/OctoputArms/octoput_arms.gd" id="1_x2ine"]
 [ext_resource type="Texture2D" uid="uid://bvl00iw763xx" path="res://Assets/Characters/TRICOT1/FALL/FALL ARM/FALL ARM 01.png" id="2_ix7rx"]
 [ext_resource type="Texture2D" uid="uid://d3s38kfoyme7k" path="res://Assets/Characters/TRICOT1/IDLE/IDLE ARM BASIC/IDLE ARM BASIC.png" id="3_nfeg6"]
 [ext_resource type="Texture2D" uid="uid://bc2ewthxmt353" path="res://Assets/Characters/TRICOT1/JUMP/JUMP ARM/JUMP ARM.png" id="4_p530v"]

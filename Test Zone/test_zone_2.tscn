@@ -359,6 +359,9 @@ layer_1/tile_data = PackedInt32Array()
 [node name="Gun" parent="." instance=ExtResource("3_it8c7")]
 position = Vector2(475, -228)
 
+[node name="Gun2" parent="." instance=ExtResource("3_it8c7")]
+position = Vector2(601, -228)
+
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 follow_viewport_enabled = true
 follow_viewport_scale = 0.5

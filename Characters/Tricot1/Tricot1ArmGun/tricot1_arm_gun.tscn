@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://bkr127l30tg8f"]
 
-[ext_resource type="Script" path="res://Characters/Octoput/ArmGun/octoput_arm_gun.gd" id="1_i04vy"]
+[ext_resource type="Script" path="res://Characters/Octoput/OctoputArmGun/octoput_arm_gun.gd" id="1_i04vy"]
 [ext_resource type="PackedScene" uid="uid://buncutx63xmxk" path="res://Weapons/Bullet/bullet.tscn" id="2_hyint"]
 [ext_resource type="Texture2D" uid="uid://b4rdfrnxyhlck" path="res://Assets/Characters/TRICOT1/IDLE/IDLE ARM GUN/IDLE ARM GUN.png" id="3_r1xt5"]
 
