@@ -10,8 +10,10 @@ class_name Character
 @export_range(0.0 , 1.0) var ACCELERATION = 0.25
 @export var Arms : PackedScene
 @export var characterName : String
+@export var max_health := 100
 
 @onready var animator = $Body
+@onready var health = max_health
 var arms
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -30,6 +32,8 @@ func _ready():
 	print("arms instanciated")
 	add_child(arms)
 	print("arms added")
+	$HealthBar.max_value = max_health
+	$HealthBar.value = max_health
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -74,8 +78,12 @@ func _physics_process(delta):
 	move_and_slide()
 
 func take_gun(weapon: String):
-	var res := "res://Characters/" + characterName + "/" + characterName + "ArmGun/" + characterName.to_lower() + "_arm_" + weapon + ".tscn"
+	var res := "res://Characters/" + characterName + "/" + characterName + "Arm" + weapon.capitalize().replace(" ", "") + "/" + characterName.to_lower() + "_arm_" + weapon + ".tscn"
 	print(res)
+	for node in get_children():
+		if node.has_method("kind") and node.kind() == "weapon":
+			node.queue_free()
+	
 	var weapon_arms = load(res).instantiate()
 	arms.visible = false
 	add_child(weapon_arms)
@@ -84,3 +92,15 @@ func take_gun(weapon: String):
 func flip(x_axis):
 	animator.scale.x = x_axis
 	arms.scale.x = x_axis
+
+func hurt(damage: int):
+	set_health(health - damage)
+	if health <= 0:
+		die()
+
+func set_health(new_health):
+	health = clamp(new_health, 0, max_health)
+	$HealthBar.value = health
+
+func die():
+	queue_free()

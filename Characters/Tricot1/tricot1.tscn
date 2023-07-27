@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bf6g4qm3o1uhb"]
+[gd_scene load_steps=13 format=3 uid="uid://bf6g4qm3o1uhb"]
 
 [ext_resource type="Script" path="res://Characters/Tricot1/tricot1.gd" id="1_q8ajm"]
 [ext_resource type="PackedScene" uid="uid://cdpxdx37alsmc" path="res://Characters/Tricot1/Tricot1Arms/tricot1_arms.tscn" id="2_af2hn"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://d3ymdh2nfjacp" path="res://Assets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 02.png" id="6_r4rpr"]
 [ext_resource type="Texture2D" uid="uid://dsigi2mhv3mjw" path="res://Assets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 03.png" id="7_b01wu"]
 [ext_resource type="Texture2D" uid="uid://b0ks4s6phfyob" path="res://Assets/Characters/TRICOT1/RUN/RUN BODY/RUN BODY 04.png" id="8_01ice"]
+[ext_resource type="PackedScene" uid="uid://1yx2l7otx2op" path="res://Objects/HealthBar/health_bar.tscn" id="10_x034o"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mv1rx"]
 animations = [{
@@ -78,3 +79,5 @@ shape = SubResource("CapsuleShape2D_rqygn")
 
 [node name="ArmPivot" type="Marker2D" parent="."]
 position = Vector2(1, 0)
+
+[node name="HealthBar" parent="." instance=ExtResource("10_x034o")]
