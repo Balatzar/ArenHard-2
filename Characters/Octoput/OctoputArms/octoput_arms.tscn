@@ -1,17 +1,17 @@
 [gd_scene load_steps=8 format=3 uid="uid://xfe5hql3bhwr"]
 
 [ext_resource type="Script" path="res://Characters/Octoput/OctoputArms/octoput_arms.gd" id="1_me4l6"]
-[ext_resource type="Texture2D" uid="uid://47g43icr8dpi" path="res://Assets/Characters/WOKTOPUTE/FALL/FALL ARM/FALL ARM.png" id="2_kyeh8"]
-[ext_resource type="Texture2D" uid="uid://c7fmp8jhh8jd1" path="res://Assets/Characters/WOKTOPUTE/IDLE/IDLE ARM/IDLE ARM.png" id="3_b1ekw"]
-[ext_resource type="Texture2D" uid="uid://cpb7b6htev0qw" path="res://Assets/Characters/WOKTOPUTE/JUMP/JUMP ARM/JUMP ARM 01.png" id="4_b6xbr"]
-[ext_resource type="Texture2D" uid="uid://c57oryubd1u6x" path="res://Assets/Characters/WOKTOPUTE/RUN/RUN ARM/RUN ARM 01.png" id="5_csmyc"]
-[ext_resource type="Texture2D" uid="uid://0mhnlmrlngak" path="res://Assets/Characters/WOKTOPUTE/RUN/RUN ARM/RUN ARM 02.png" id="6_k1q1m"]
+[ext_resource type="Texture2D" uid="uid://d1oseb4tfqwmv" path="res://Assets/Characters/OCTOPUT/ARMS/FALL/ARM FALL 01.png" id="2_vvo77"]
+[ext_resource type="Texture2D" uid="uid://p4f2ikq5dxnl" path="res://Assets/Characters/OCTOPUT/ARMS/IDLE/ARM IDLE.png" id="3_wtccx"]
+[ext_resource type="Texture2D" uid="uid://cix8s45b6x3hd" path="res://Assets/Characters/OCTOPUT/ARMS/JUMP/ARM JUMP 01.png" id="4_6sghy"]
+[ext_resource type="Texture2D" uid="uid://ct8gfu8d8fb71" path="res://Assets/Characters/OCTOPUT/ARMS/RUN/ARM RUN 01.png" id="5_33km7"]
+[ext_resource type="Texture2D" uid="uid://b2gep11dsquxd" path="res://Assets/Characters/OCTOPUT/ARMS/RUN/ARM RUN 02.png" id="6_ny3sq"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3afmq"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_kyeh8")
+"texture": ExtResource("2_vvo77")
 }],
 "loop": true,
 "name": &"Fall",
@@ -19,7 +19,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_b1ekw")
+"texture": ExtResource("3_wtccx")
 }],
 "loop": true,
 "name": &"Idle",
@@ -27,7 +27,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_b6xbr")
+"texture": ExtResource("4_6sghy")
 }],
 "loop": true,
 "name": &"Jump",
@@ -35,10 +35,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_csmyc")
+"texture": ExtResource("5_33km7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_k1q1m")
+"texture": ExtResource("6_ny3sq")
 }],
 "loop": true,
 "name": &"Run",

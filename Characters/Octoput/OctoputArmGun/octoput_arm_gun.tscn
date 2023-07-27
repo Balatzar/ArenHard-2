@@ -2,17 +2,17 @@
 
 [ext_resource type="Script" path="res://Characters/Octoput/OctoputArmGun/octoput_arm_gun.gd" id="1_8ef44"]
 [ext_resource type="PackedScene" uid="uid://buncutx63xmxk" path="res://Weapons/Bullet/bullet.tscn" id="2_5y5sf"]
-[ext_resource type="Texture2D" uid="uid://ba06265do1paj" path="res://Assets/Characters/WOKTOPUTE/WEAPON /WEAPON GUN.png" id="3_ycjvr"]
-[ext_resource type="Texture2D" uid="uid://bq26tkjrremq6" path="res://Assets/Characters/WOKTOPUTE/ANIM WEAPON/gun/arm_gun_01.png" id="4_476n4"]
-[ext_resource type="Texture2D" uid="uid://cmqlj3wmsi56d" path="res://Assets/Characters/WOKTOPUTE/ANIM WEAPON/gun/arm_gun_02.png" id="5_kta6r"]
-[ext_resource type="Texture2D" uid="uid://bvg7hvw7tlu6s" path="res://Assets/Characters/WOKTOPUTE/ANIM WEAPON/gun/arm_gun_03.png" id="6_yidsj"]
-[ext_resource type="Texture2D" uid="uid://cts2mbuwa3g3a" path="res://Assets/Characters/WOKTOPUTE/ANIM WEAPON/gun/arm_gun_04.png" id="7_1yhyq"]
+[ext_resource type="Texture2D" uid="uid://c4yxfwnyvkhvr" path="res://Assets/Characters/OCTOPUT/WEAPONS/GUN/GUN IDLE/GUN IDLE.png" id="3_50esb"]
+[ext_resource type="Texture2D" uid="uid://t5rud74553i8" path="res://Assets/Characters/OCTOPUT/WEAPONS/GUN/GUN SHOOT/GUN_shoot_01.png" id="4_n5rar"]
+[ext_resource type="Texture2D" uid="uid://cbuctdovoosv5" path="res://Assets/Characters/OCTOPUT/WEAPONS/GUN/GUN SHOOT/GUN_shoot_02.png" id="5_qp1o1"]
+[ext_resource type="Texture2D" uid="uid://ckp682g0k5a3d" path="res://Assets/Characters/OCTOPUT/WEAPONS/GUN/GUN SHOOT/GUN_shoot_03.png" id="6_4l1ha"]
+[ext_resource type="Texture2D" uid="uid://c82ge3epdmj06" path="res://Assets/Characters/OCTOPUT/WEAPONS/GUN/GUN SHOOT/GUN_shoot_04.png" id="7_a0i47"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_26qp0"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_ycjvr")
+"texture": ExtResource("3_50esb")
 }],
 "loop": true,
 "name": &"Idle",
@@ -20,16 +20,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_476n4")
+"texture": ExtResource("4_n5rar")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_kta6r")
+"texture": ExtResource("5_qp1o1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_yidsj")
+"texture": ExtResource("6_4l1ha")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_1yhyq")
+"texture": ExtResource("7_a0i47")
 }],
 "loop": false,
 "name": &"Shoot",
@@ -116,15 +116,14 @@ _data = {
 }
 
 [node name="ArmGun" type="Node2D"]
-position = Vector2(-1, -23)
 script = ExtResource("1_8ef44")
 Bullet = ExtResource("2_5y5sf")
 
 [node name="Animator" type="AnimatedSprite2D" parent="."]
 position = Vector2(2.08165e-12, 2.08165e-12)
 sprite_frames = SubResource("SpriteFrames_26qp0")
-animation = &"Idle"
-offset = Vector2(15, -45)
+animation = &"Shoot"
+frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -132,4 +131,4 @@ libraries = {
 }
 
 [node name="Muzzle" type="Marker2D" parent="."]
-position = Vector2(39, 7)
+position = Vector2(76, 10)
