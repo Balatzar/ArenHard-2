@@ -71,7 +71,15 @@ sprite_frames = SubResource("SpriteFrames_mv1rx")
 animation = &"Fall"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+zoom = Vector2(1.5, 1.5)
+limit_left = -2500
+limit_top = -2000
+limit_right = 2500
+limit_bottom = 2000
+limit_smoothed = true
+position_smoothing_speed = 10.0
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, 8)
