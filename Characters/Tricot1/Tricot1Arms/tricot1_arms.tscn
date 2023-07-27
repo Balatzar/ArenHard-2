@@ -1,19 +1,20 @@
-[gd_scene load_steps=10 format=3 uid="uid://cdpxdx37alsmc"]
+[gd_scene load_steps=11 format=3 uid="uid://cdpxdx37alsmc"]
 
 [ext_resource type="Script" path="res://Characters/Octoput/OctoputArms/octoput_arms.gd" id="1_x2ine"]
-[ext_resource type="Texture2D" uid="uid://bvl00iw763xx" path="res://Assets/Characters/TRICOT1/FALL/FALL ARM/FALL ARM 01.png" id="2_ix7rx"]
-[ext_resource type="Texture2D" uid="uid://d3s38kfoyme7k" path="res://Assets/Characters/TRICOT1/IDLE/IDLE ARM BASIC/IDLE ARM BASIC.png" id="3_nfeg6"]
-[ext_resource type="Texture2D" uid="uid://bc2ewthxmt353" path="res://Assets/Characters/TRICOT1/JUMP/JUMP ARM/JUMP ARM.png" id="4_p530v"]
-[ext_resource type="Texture2D" uid="uid://bp6k0rin3daxy" path="res://Assets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 01.png" id="5_i3ein"]
-[ext_resource type="Texture2D" uid="uid://dg2a40axv1gu8" path="res://Assets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 02.png" id="6_45vgk"]
-[ext_resource type="Texture2D" uid="uid://ch0c2xejjt57d" path="res://Assets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 03.png" id="7_jhbmq"]
-[ext_resource type="Texture2D" uid="uid://ctm2wwwpnrqrp" path="res://Assets/Characters/TRICOT1/RUN/RUN ARM/RUN ARM 04.png" id="8_xg0qw"]
+[ext_resource type="Texture2D" uid="uid://chawwxxo8y2fp" path="res://Assets/Characters/TRICOT1/ARMS/FALL/ARM FALL.png" id="2_1ugsl"]
+[ext_resource type="Texture2D" uid="uid://cjp18vn6yvanv" path="res://Assets/Characters/TRICOT1/ARMS/IDLE/ARMS IDLE 01.png" id="3_0o3th"]
+[ext_resource type="Texture2D" uid="uid://i6ytmb8xab63" path="res://Assets/Characters/TRICOT1/ARMS/IDLE/ARMS IDLE 02.png" id="4_yketq"]
+[ext_resource type="Texture2D" uid="uid://c8qm773lbfcx1" path="res://Assets/Characters/TRICOT1/ARMS/JUMP/ARM JUMP.png" id="5_nwtdh"]
+[ext_resource type="Texture2D" uid="uid://cno42ae14tr6m" path="res://Assets/Characters/TRICOT1/ARMS/RUN/ARM RUN 01.png" id="6_4apct"]
+[ext_resource type="Texture2D" uid="uid://do2xpr47nkl34" path="res://Assets/Characters/TRICOT1/ARMS/RUN/ARM RUN 02.png" id="7_jk8pw"]
+[ext_resource type="Texture2D" uid="uid://cw5i8bnquvco3" path="res://Assets/Characters/TRICOT1/ARMS/RUN/ARM RUN 03.png" id="8_f3teh"]
+[ext_resource type="Texture2D" uid="uid://ucivjgcl3jj5" path="res://Assets/Characters/TRICOT1/ARMS/RUN/ARM RUN 04.png" id="9_ayy4t"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3afmq"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_ix7rx")
+"texture": ExtResource("2_1ugsl")
 }],
 "loop": true,
 "name": &"Fall",
@@ -21,15 +22,18 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_nfeg6")
+"texture": ExtResource("3_0o3th")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yketq")
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 1.0
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_p530v")
+"texture": ExtResource("5_nwtdh")
 }],
 "loop": true,
 "name": &"Jump",
@@ -37,16 +41,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_i3ein")
+"texture": ExtResource("6_4apct")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_45vgk")
+"texture": ExtResource("7_jk8pw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_jhbmq")
+"texture": ExtResource("8_f3teh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_xg0qw")
+"texture": ExtResource("9_ayy4t")
 }],
 "loop": true,
 "name": &"Run",
@@ -58,4 +62,4 @@ script = ExtResource("1_x2ine")
 
 [node name="Animator" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3afmq")
-animation = &"Run"
+animation = &"Idle"

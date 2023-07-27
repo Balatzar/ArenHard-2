@@ -50,4 +50,4 @@ script = ExtResource("1_me4l6")
 
 [node name="Animator" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3afmq")
-animation = &"Run"
+animation = &"Idle"

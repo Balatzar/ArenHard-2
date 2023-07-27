@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://duuoyaelhruqt"]
+[gd_scene load_steps=10 format=3 uid="uid://duuoyaelhruqt"]
 
 [ext_resource type="Texture2D" uid="uid://cgft4lvx62vp" path="res://Assets/Tiles/tiles.png" id="1_ne7is"]
 [ext_resource type="PackedScene" uid="uid://c6vleknr72bsi" path="res://Weapons/Gun/gun.tscn" id="2_7ltbm"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dta7k0imlwaxe" path="res://Assets/Arena/ground.png" id="4_ix52d"]
 [ext_resource type="PackedScene" uid="uid://p6eenj0m0n16" path="res://Characters/Octoput/octoput.tscn" id="5_ic8lc"]
 [ext_resource type="PackedScene" uid="uid://5rsryhm5k32w" path="res://Weapons/MachineGun/machine_gun.tscn" id="6_rxyhk"]
+[ext_resource type="PackedScene" uid="uid://bf6g4qm3o1uhb" path="res://Characters/Tricot1/tricot1.tscn" id="7_skxyt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mwnj8"]
 texture = ExtResource("1_ne7is")
@@ -348,7 +349,7 @@ sources/0 = SubResource("TileSetAtlasSource_mwnj8")
 tile_set = SubResource("TileSet_46mo4")
 cell_quadrant_size = 64
 format = 2
-layer_0/tile_data = PackedInt32Array(-196608, 65536, 5, -196603, 196608, 5, -196602, 196608, 5, -196601, 196608, 5, -196600, 131072, 5, -196599, 196608, 5, -196598, 196608, 5, -196597, 196608, 5, -196596, 196608, 5, -196595, 131072, 5, -196607, 196608, 5, -196606, 196608, 5, -196605, 131072, 5, -196604, 196608, 5)
+layer_0/tile_data = PackedInt32Array(-196608, 65536, 5, -196603, 196608, 5, -196602, 196608, 5, -196601, 196608, 5, -196600, 131072, 5, -196599, 196608, 5, -196598, 196608, 5, -196597, 196608, 5, -196596, 196608, 5, -196595, 131072, 5, -196607, 196608, 5, -196606, 196608, 5, -196605, 131072, 5, -196604, 196608, 5, -196593, 65536, 3, -262129, 65536, 3, -196592, 65536, 3, -196591, 65536, 3, -196590, 65536, 3, -262126, 65536, 3, -327662, 65536, 3, -393198, 65536, 3, -458734, 65536, 3, -458735, 65536, 3, -458736, 65536, 3, -458737, 65536, 3)
 layer_1/name = ""
 layer_1/enabled = true
 layer_1/modulate = Color(1, 1, 1, 1)
@@ -385,3 +386,6 @@ position = Vector2(317, -373)
 
 [node name="MachineGun" parent="." instance=ExtResource("6_rxyhk")]
 position = Vector2(762, -269)
+
+[node name="Tricot1" parent="." instance=ExtResource("7_skxyt")]
+position = Vector2(1080, -295)
