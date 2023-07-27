@@ -1,18 +1,22 @@
-[gd_scene load_steps=13 format=3 uid="uid://bkr127l30tg8f"]
+[gd_scene load_steps=17 format=3 uid="uid://b3qmg43wntt74"]
 
-[ext_resource type="Script" path="res://Characters/Octoput/OctoputArmGun/octoput_arm_gun.gd" id="1_i04vy"]
-[ext_resource type="PackedScene" uid="uid://buncutx63xmxk" path="res://Weapons/Bullet/bullet.tscn" id="2_hyint"]
-[ext_resource type="Texture2D" uid="uid://5lowffpe3fum" path="res://Assets/Characters/TRICOT1/WEAPONS/GUN/GUN IDLE/GUN IDLE.png" id="3_df2ye"]
-[ext_resource type="Texture2D" uid="uid://dujj8y8qxjhgn" path="res://Assets/Characters/TRICOT1/WEAPONS/GUN/GUN SHOOT/GUN_shoot_01.png" id="4_migee"]
-[ext_resource type="Texture2D" uid="uid://blugpekp3u3tj" path="res://Assets/Characters/TRICOT1/WEAPONS/GUN/GUN SHOOT/GUN_shoot_02.png" id="5_e0t7b"]
-[ext_resource type="Texture2D" uid="uid://wcbpd4qjs0jj" path="res://Assets/Characters/TRICOT1/WEAPONS/GUN/GUN SHOOT/GUN_shoot_03.png" id="6_kyc1b"]
-[ext_resource type="Texture2D" uid="uid://igj6r3sp6w7b" path="res://Assets/Characters/TRICOT1/WEAPONS/GUN/GUN SHOOT/GUN_shoot_04.png" id="7_ktsbp"]
+[ext_resource type="Script" path="res://Characters/Tricot1/Tricot1ArmMachineGun/tricot1_arm_machine_gun.gd" id="1_qssmd"]
+[ext_resource type="PackedScene" uid="uid://buncutx63xmxk" path="res://Weapons/Bullet/bullet.tscn" id="2_8mnjj"]
+[ext_resource type="Texture2D" uid="uid://cfpwrsu8nkqlg" path="res://Assets/Characters/TRICOT1/WEAPONS/MACHINE GUN/MG IDLE/MG IDLE.png" id="3_ma6wq"]
+[ext_resource type="Texture2D" uid="uid://demiqndgpgknj" path="res://Assets/Characters/TRICOT1/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_01.png" id="4_cyfq3"]
+[ext_resource type="Texture2D" uid="uid://dxj8undltvl31" path="res://Assets/Characters/TRICOT1/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_02.png" id="5_8jmsq"]
+[ext_resource type="Texture2D" uid="uid://yoex7bx0nby" path="res://Assets/Characters/TRICOT1/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_03.png" id="6_4oa33"]
+[ext_resource type="Texture2D" uid="uid://c0bxgdy77bd5j" path="res://Assets/Characters/TRICOT1/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_04.png" id="7_h63jl"]
+[ext_resource type="Texture2D" uid="uid://ckttmlscbwpuh" path="res://Assets/Characters/TRICOT1/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_05.png" id="8_p561o"]
+[ext_resource type="Texture2D" uid="uid://bpsgex5no8uqd" path="res://Assets/Characters/TRICOT1/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_06.png" id="9_vaqr0"]
+[ext_resource type="Texture2D" uid="uid://behvphbh1eimc" path="res://Assets/Characters/TRICOT1/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_07.png" id="10_s18mh"]
+[ext_resource type="Texture2D" uid="uid://b384pg2x8jf3m" path="res://Assets/Characters/TRICOT1/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_08.png" id="11_qqfeu"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_26qp0"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_df2ye")
+"texture": ExtResource("3_ma6wq")
 }],
 "loop": true,
 "name": &"Idle",
@@ -20,16 +24,28 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_migee")
+"texture": ExtResource("4_cyfq3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_e0t7b")
+"texture": ExtResource("5_8jmsq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_kyc1b")
+"texture": ExtResource("6_4oa33")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_ktsbp")
+"texture": ExtResource("7_h63jl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_p561o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vaqr0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_s18mh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qqfeu")
 }],
 "loop": false,
 "name": &"Shoot",
@@ -117,8 +133,8 @@ _data = {
 
 [node name="ArmGun" type="Node2D"]
 position = Vector2(-1, -23)
-script = ExtResource("1_i04vy")
-Bullet = ExtResource("2_hyint")
+script = ExtResource("1_qssmd")
+Bullet = ExtResource("2_8mnjj")
 
 [node name="Animator" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_26qp0")
@@ -131,4 +147,4 @@ libraries = {
 }
 
 [node name="Muzzle" type="Marker2D" parent="."]
-position = Vector2(87, 0)
+position = Vector2(112, 24)
