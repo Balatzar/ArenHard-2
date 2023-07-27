@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://5rsryhm5k32w"]
+
+[ext_resource type="Script" path="res://Weapons/MachineGun/machine_gun.gd" id="1_3mpkn"]
+[ext_resource type="Texture2D" uid="uid://bf8qe6b4g8gru" path="res://Assets/Weapons/prop_MG.png" id="2_jr4dy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1b6tr"]
+size = Vector2(46, 28)
+
+[node name="MachineGun" type="Area2D"]
+light_mask = 2
+visibility_layer = 2
+script = ExtResource("1_3mpkn")
+
+[node name="PropGun" type="Sprite2D" parent="."]
+position = Vector2(16, -1.99999)
+scale = Vector2(0.0388889, 0.0388889)
+texture = ExtResource("2_jr4dy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(17, -4)
+shape = SubResource("RectangleShape2D_1b6tr")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

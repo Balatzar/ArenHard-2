@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 class_name Character
 
-
 @export var SPEED = 500.0
 @export var JUMP_VELOCITY = -400
 @export var JUMP_HOLD_VELOCITY = 40.0 # Additional jump velocity when holding the button
