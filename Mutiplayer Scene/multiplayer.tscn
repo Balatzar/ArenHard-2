@@ -1,15 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://dk0kq1n6sw1yu"]
 
 [ext_resource type="Script" path="res://Mutiplayer Scene/multiplayer.gd" id="1_1infk"]
-[ext_resource type="PackedScene" uid="uid://duuoyaelhruqt" path="res://Test Zone/test_damage.tscn" id="2_oj3pu"]
+[ext_resource type="PackedScene" uid="uid://xmu6obpnraox" path="res://Test Zone/test_spawn.tscn" id="2_jbqsi"]
 
 [node name="Multiplayer" type="Node"]
 script = ExtResource("1_1infk")
-main_scene = ExtResource("2_oj3pu")
+main_scene = ExtResource("2_jbqsi")
 
 [node name="Level" type="Node" parent="."]
 
 [node name="LevelSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://Test Zone/test_spawn.tscn")
 spawn_path = NodePath("../Level")
 spawn_limit = 1
 

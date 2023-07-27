@@ -15,11 +15,13 @@ class_name Character
 @export var player := 1 :
 	set(id):
 		player = id
-		$PlayerInput.set_multiplayer_authority(id)
 
 @onready var animator = $Body
 @onready var health = max_health
 @onready var input = $PlayerInput
+
+func _enter_tree():
+	$PlayerInput.set_multiplayer_authority(str(name).to_int())
 
 var arms
 
@@ -40,8 +42,12 @@ func _ready():
 	print("arms instanciated")
 	add_child(arms)
 	print("arms added")
+	print("player ID : " + str(player))
 	$HealthBar.max_value = max_health
 	$HealthBar.value = max_health
+	
+	print("multiplayer.get_unique_id()")
+	print(multiplayer.get_unique_id())
 
 	if player == multiplayer.get_unique_id():
 		$Camera2D.enabled = true
