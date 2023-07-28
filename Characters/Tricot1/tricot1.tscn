@@ -73,6 +73,10 @@ properties/1/path = NodePath(".:position")
 properties/1/spawn = true
 properties/1/sync = true
 properties/1/watch = false
+properties/2/path = NodePath("Body:scale")
+properties/2/spawn = true
+properties/2/sync = true
+properties/2/watch = false
 
 [node name="Tricot1" type="CharacterBody2D" groups=["Players"]]
 script = ExtResource("1_q8ajm")
@@ -114,3 +118,10 @@ offset_bottom = -82.0
 
 [node name="ServerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_vmsd6")
+
+[node name="Debug" type="Label" parent="."]
+offset_left = -18.0
+offset_top = -139.0
+offset_right = 22.0
+offset_bottom = -116.0
+text = "Name"

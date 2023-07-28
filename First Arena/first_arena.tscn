@@ -490,7 +490,7 @@ script = ExtResource("1_ck3fn")
 position = Vector2(6, -2168)
 
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://Characters/Tricot1/tricot1.tscn", "res://Characters/Octoput/octoput.tscn")
+_spawnable_scenes = PackedStringArray("res://Characters/Tricot1/tricot1.tscn", "res://Characters/Octoput/octoput.tscn", "res://Weapons/Bullet/bullet.tscn")
 spawn_path = NodePath("../Players")
 
 [node name="ArenaTiles" type="TileMap" parent="."]
@@ -545,3 +545,9 @@ position = Vector2(-1700, 158)
 [node name="WeaponSpawn2" parent="." instance=ExtResource("6_u3neu")]
 position = Vector2(-517, -750)
 weapon = ExtResource("3_06aex")
+
+[node name="Gun2" parent="." instance=ExtResource("3_06aex")]
+position = Vector2(-185, -502)
+
+[node name="Gun3" parent="." instance=ExtResource("3_06aex")]
+position = Vector2(263, -594)

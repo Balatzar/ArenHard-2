@@ -15,6 +15,6 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	if body.visibility_layer == 1:
+	if body.is_in_group("Players"):
 		body.take_gun(weapon_name)
 		queue_free()

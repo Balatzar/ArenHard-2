@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6j0h8i5teae5"]
+
+[ext_resource type="Script" path="res://Objects/Ball/ball.gd" id="1_0h8wi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x6vmo"]
+radius = 21.0
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_1y00j"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/sync = true
+properties/0/watch = false
+
+[node name="Ball" type="RigidBody2D"]
+script = ExtResource("1_0h8wi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_x6vmo")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_interval = 0.1
+replication_config = SubResource("SceneReplicationConfig_1y00j")

@@ -12,12 +12,13 @@ class_name Character
 @export var characterName : String
 @export var max_health := 100
 
+@export var health : int
+
 @export var player := 1 :
 	set(id):
 		player = id
 
 @onready var animator = $Body
-@onready var health = max_health
 @onready var input = $PlayerInput
 
 func _enter_tree():
@@ -35,6 +36,7 @@ var jump_hold_time = 0.0 # The amount of time the jump button has been held down
 
 
 func _ready():
+	health = max_health
 	print(input)
 	animator.play("Idle")
 	print("instance arms")
@@ -51,6 +53,8 @@ func _ready():
 
 	if player == multiplayer.get_unique_id():
 		$Camera2D.enabled = true
+	
+	$Debug.text = self.name
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -116,9 +120,14 @@ func flip(x_axis):
 	if is_instance_valid(arms):
 		arms.scale.x = x_axis
 
+@rpc("any_peer", "call_local", "reliable")
 func hurt(damage: int):
-	velocity.y = -300
-	velocity.x = 200
+	print("hurt")
+	print(self)
+	print("end hurt")
+	print("called by ", multiplayer.get_remote_sender_id())
+	# velocity.y = -300
+	# velocity.x = 200
 	set_health(health - damage)
 	if health <= 0:
 		die()
@@ -126,6 +135,8 @@ func hurt(damage: int):
 func set_health(new_health):
 	health = clamp(new_health, 0, max_health)
 	$HealthBar.value = health
+	print("self health : ", health)
+	print(player)
 
 func die():
 	queue_free()

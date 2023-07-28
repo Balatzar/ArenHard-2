@@ -11,5 +11,6 @@ func _physics_process(delta):
 
 func _on_body_entered(body):
 	if body.is_in_group("Players"):
-		body.hurt(damage)
+		print("bullet hit player: ", body)
+		body.hurt.rpc(damage)
 	queue_free()
