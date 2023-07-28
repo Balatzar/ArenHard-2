@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://82j0jfw18hpb" path="res://Assets/Arena/background2.webp" id="3_li2nt"]
 [ext_resource type="Texture2D" uid="uid://eg042sdk115d" path="res://Assets/Arena/foreground.webp" id="5_r03aq"]
 [ext_resource type="PackedScene" uid="uid://b8hwonyreyv2y" path="res://Objects/WeaponSpawn/weapon_spawn.tscn" id="6_u3neu"]
-[ext_resource type="PackedScene" uid="uid://p6eenj0m0n16" path="res://Characters/Octoput/octoput.tscn" id="7_663cb"]
 [ext_resource type="PackedScene" uid="uid://c0cmtqfhoed65" path="res://Objects/Hazards/KillOrb.tscn" id="7_mit27"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mwnj8"]
