@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bswkq7nfvel3p"
-path="res://.godot/imported/IDLE GUN.png-7ed2efbc82ac9f1e3836d01d060840df.ctex"
+path="res://.godot/imported/IDLE GUN.png-7943e645ca7e1fb243a934f745286037.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Characters/TSITAH/WEAPONS/GUN/GUN IDLE /IDLE GUN.png"
-dest_files=["res://.godot/imported/IDLE GUN.png-7ed2efbc82ac9f1e3836d01d060840df.ctex"]
+source_file="res://Assets/Characters/TSITAH/WEAPONS/GUN/GUN IDLE/IDLE GUN.png"
+dest_files=["res://.godot/imported/IDLE GUN.png-7943e645ca7e1fb243a934f745286037.ctex"]
 
 [params]
 
