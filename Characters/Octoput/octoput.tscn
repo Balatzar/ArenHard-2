@@ -71,6 +71,7 @@ script = ExtResource("1_phwdg")
 JUMP_VELOCITY = -900
 Arms = ExtResource("8_o5sm8")
 characterName = "Octoput"
+max_health = 200
 
 [node name="Body" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mv1rx")
@@ -79,7 +80,7 @@ frame_progress = 0.0809121
 
 [node name="Camera2D" type="Camera2D" parent="."]
 enabled = false
-zoom = Vector2(0.75, 0.75)
+zoom = Vector2(2, 2)
 limit_left = -2500
 limit_top = -20000
 limit_right = 2500
