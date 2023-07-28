@@ -4,8 +4,8 @@ class_name MultiplayerLevel
 
 var characters := [
 	#preload("res://Characters/Tricot1/tricot1.tscn"),
-	#preload("res://Characters/Octoput/octoput.tscn")
-	preload("res://Characters/Tsitah/tsitah.tscn")
+	preload("res://Characters/Octoput/octoput.tscn")
+	#preload("res://Characters/Tsitah/tsitah.tscn")
 	#preload("res://Characters/Bertaaa/bertaaa.tscn")
 ]
 
