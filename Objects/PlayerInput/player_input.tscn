@@ -11,3 +11,5 @@ properties/0/watch = false
 [node name="PlayerInput" type="MultiplayerSynchronizer"]
 replication_config = SubResource("SceneReplicationConfig_uot3t")
 script = ExtResource("1_l66kq")
+
+[node name="Space" type="Node2D" parent="."]

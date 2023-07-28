@@ -2,10 +2,10 @@ extends CharacterBody2D
 
 class_name Character
 
-@export var SPEED = 500.0
-@export var JUMP_VELOCITY = -400
-@export var JUMP_HOLD_VELOCITY = 40.0 # Additional jump velocity when holding the button
-@export var MAX_JUMP_TIME = 0.50
+@export var SPEED := 500.0
+@export var JUMP_VELOCITY := -400
+@export var JUMP_HOLD_VELOCITY := 40.0 # Additional jump velocity when holding the button
+@export var MAX_JUMP_TIME := 0.50
 @export_range(0.0, 1.0) var FRICTION = 0.1
 @export_range(0.0 , 1.0) var ACCELERATION = 0.25
 @export var Arms : PackedScene
@@ -79,19 +79,23 @@ func _physics_process(delta):
 		velocity.x = lerp(velocity.x, input.direction * SPEED, ACCELERATION)
 		if velocity.y == 0:
 			animator.play("Run")
-			arms.animator.play("Run")
+			if is_instance_valid(arms):
+				arms.animator.play("Run")
 	else:
 		velocity.x = lerp(velocity.x, 0.0, FRICTION)
 		if velocity.y == 0:
 			animator.play("Idle")
-			arms.animator.play("Idle")
+			if is_instance_valid(arms):
+				arms.animator.play("Idle")
 	
 	if velocity.y < 0:
 		animator.play("Jump")
-		arms.animator.play("Jump")
+		if is_instance_valid(arms):
+			arms.animator.play("Jump")
 	elif velocity.y > 0:
 		animator.play("Fall")
-		arms.animator.play("Fall")
+		if is_instance_valid(arms):
+			arms.animator.play("Fall")
 
 	move_and_slide()
 
@@ -100,16 +104,16 @@ func take_gun(weapon: String):
 	print(res)
 	for node in get_children():
 		if node.has_method("kind") and node.kind() == "weapon":
-			node.queue_free()
+			node.call_deferred("queue_free")
 	
 	var weapon_arms = load(res).instantiate()
-	arms.visible = false
 	add_child(weapon_arms)
 	weapon_arms.global_position = $ArmPivot.global_position
 
 func flip(x_axis):
 	animator.scale.x = x_axis
-	arms.scale.x = x_axis
+	if is_instance_valid(arms):
+		arms.scale.x = x_axis
 
 func hurt(damage: int):
 	set_health(health - damage)

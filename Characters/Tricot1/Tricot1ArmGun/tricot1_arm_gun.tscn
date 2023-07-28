@@ -115,7 +115,7 @@ _data = {
 "Shoot": SubResource("Animation_erpnl")
 }
 
-[node name="ArmGun" type="Node2D"]
+[node name="Tricot1ArmGun" type="Node2D"]
 position = Vector2(-1, -23)
 script = ExtResource("1_i04vy")
 Bullet = ExtResource("2_hyint")
