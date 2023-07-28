@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqdxjn8aac23n"]
+
+[ext_resource type="Script" path="res://Characters/Octoput/OctoputArms/octoput_arms.gd" id="1_mjymg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3afmq"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Fall",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Idle",
+"speed": 1.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Run",
+"speed": 4.0
+}]
+
+[node name="Arms" type="Node2D"]
+script = ExtResource("1_mjymg")
+
+[node name="Animator" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_3afmq")
+animation = &"Run"
