@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://f4wymbkmce1v"]
+[gd_scene load_steps=14 format=3 uid="uid://f4wymbkmce1v"]
 
 [ext_resource type="Script" path="res://Characters/Octoput/OctoputArmGun/octoput_arm_gun.gd" id="1_8ef44"]
 [ext_resource type="PackedScene" uid="uid://buncutx63xmxk" path="res://Weapons/Bullet/bullet.tscn" id="2_5y5sf"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cbuctdovoosv5" path="res://Assets/Characters/OCTOPUT/WEAPONS/GUN/GUN SHOOT/GUN_shoot_02.png" id="5_qp1o1"]
 [ext_resource type="Texture2D" uid="uid://ckp682g0k5a3d" path="res://Assets/Characters/OCTOPUT/WEAPONS/GUN/GUN SHOOT/GUN_shoot_03.png" id="6_4l1ha"]
 [ext_resource type="Texture2D" uid="uid://c82ge3epdmj06" path="res://Assets/Characters/OCTOPUT/WEAPONS/GUN/GUN SHOOT/GUN_shoot_04.png" id="7_a0i47"]
+[ext_resource type="AudioStream" uid="uid://c1xh8o0d3bn5k" path="res://Assets/Sounds/shot.mp3" id="8_ij1hl"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_26qp0"]
 animations = [{
@@ -132,3 +133,7 @@ libraries = {
 
 [node name="Muzzle" type="Marker2D" parent="."]
 position = Vector2(76, 10)
+
+[node name="WeaponShot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_ij1hl")
+volume_db = -26.11

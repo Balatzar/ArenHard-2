@@ -34,8 +34,13 @@ func shoot():
 	add_child(bullet)
 	bullet.global_transform = $Muzzle.global_transform
 	
+	play_sound()
+	
 	await animator.animation_finished
 	animator.play("Idle")
 	await get_tree().create_timer(cooldown).timeout
 	shooting = false
 
+func play_sound():
+	# This method will be overridden in child scripts
+	pass
