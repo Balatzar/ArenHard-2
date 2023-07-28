@@ -1,0 +1,115 @@
+[gd_scene load_steps=15 format=3 uid="uid://b0vlud80hi8re"]
+
+[ext_resource type="Script" path="res://Characters/Tsitah/tsitah.gd" id="1_ww2br"]
+[ext_resource type="PackedScene" uid="uid://ch3cx8vffj0dt" path="res://Characters/Tsitah/TsitahArms/tsitah_arms.tscn" id="2_h8kx8"]
+[ext_resource type="Texture2D" uid="uid://clo0xjdpi67je" path="res://Assets/Characters/TSITAH/BODY/FALL/BODY FALL.png" id="3_cfed4"]
+[ext_resource type="Texture2D" uid="uid://bkoopkg6pqv3g" path="res://Assets/Characters/TSITAH/BODY/IDLE/BODY IDLE 01.png" id="4_64avn"]
+[ext_resource type="Texture2D" uid="uid://cukj5eqorkst8" path="res://Assets/Characters/TSITAH/BODY/IDLE/BODY IDLE 02.png" id="5_swy83"]
+[ext_resource type="Texture2D" uid="uid://ca2ea77l4umml" path="res://Assets/Characters/TSITAH/BODY/JUMP/BODY JUMP 01.png" id="6_ld1wq"]
+[ext_resource type="Texture2D" uid="uid://bg1216py05vq6" path="res://Assets/Characters/TSITAH/BODY/JUMP/BODY JUMP 02.png" id="7_r0hqs"]
+[ext_resource type="Texture2D" uid="uid://0cssocah66sr" path="res://Assets/Characters/TSITAH/BODY/RUN/BODY RUN 01.png" id="8_2vtlk"]
+[ext_resource type="PackedScene" uid="uid://1yx2l7otx2op" path="res://Objects/HealthBar/health_bar.tscn" id="9_qahk5"]
+[ext_resource type="Texture2D" uid="uid://vfmmu1tmlixr" path="res://Assets/Characters/TSITAH/BODY/RUN/BODY RUN 02.png" id="9_wmnj7"]
+[ext_resource type="PackedScene" uid="uid://b5x0dhuae5l8s" path="res://Objects/PlayerInput/player_input.tscn" id="10_he0ho"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mv1rx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_cfed4")
+}],
+"loop": true,
+"name": &"Fall",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_64avn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_swy83")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_ld1wq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_r0hqs")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_2vtlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wmnj7")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rqygn"]
+radius = 39.0
+height = 140.0
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_uyd5f"]
+properties/0/path = NodePath(".:player")
+properties/0/spawn = true
+properties/0/sync = false
+properties/0/watch = false
+properties/1/path = NodePath(".:position")
+properties/1/spawn = true
+properties/1/sync = true
+properties/1/watch = false
+
+[node name="Tsitah" type="CharacterBody2D" groups=["Players"]]
+script = ExtResource("1_ww2br")
+SPEED = 900.0
+JUMP_VELOCITY = -1000
+JUMP_HOLD_VELOCITY = 1000.0
+MAX_JUMP_TIME = 5.0
+FRICTION = 0.05
+ACCELERATION = 0.127
+Arms = ExtResource("2_h8kx8")
+characterName = "Tsitah"
+
+[node name="Body" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mv1rx")
+animation = &"Fall"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+enabled = false
+zoom = Vector2(2, 2)
+limit_left = -2500
+limit_top = -20000
+limit_right = 2500
+limit_bottom = 25000
+limit_smoothed = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, -11)
+shape = SubResource("CapsuleShape2D_rqygn")
+
+[node name="ArmPivot" type="Marker2D" parent="."]
+position = Vector2(0, -5)
+
+[node name="HealthBar" parent="." instance=ExtResource("9_qahk5")]
+offset_left = -41.0
+offset_top = -109.0
+offset_right = 44.0
+offset_bottom = -82.0
+
+[node name="PlayerInput" parent="." instance=ExtResource("10_he0ho")]
+
+[node name="ServerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_uyd5f")

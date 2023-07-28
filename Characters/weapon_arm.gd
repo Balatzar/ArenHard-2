@@ -23,13 +23,13 @@ func _process(delta):
 	if get_parent().input.just_shooted:
 		shoot()
 		get_parent().input.just_shooted = false
-
+	
 func shoot():
 	if shooting:
 		return
 	shooting = true
 	animator.play("Shoot")
-
+	
 	var bullet = Bullet.instantiate()
 	add_child(bullet)
 	bullet.global_transform = $Muzzle.global_transform

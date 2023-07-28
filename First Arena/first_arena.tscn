@@ -1,3 +1,4 @@
+
 [gd_scene load_steps=9 format=3 uid="uid://bhvjgxcvxe25x"]
 
 [ext_resource type="Script" path="res://Third_arena/third_arena.gd" id="1_mynj1"]
@@ -169,6 +170,7 @@ texture_region_size = Vector2i(64, 64)
 9:4/0 = 0
 9:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:4/0/physics_layer_0/angular_velocity = 0.0
+9:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 0:5/0 = 0
 0:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:5/0/physics_layer_0/angular_velocity = 0.0
@@ -540,6 +542,7 @@ position = Vector2(-1700, 158)
 [node name="Gun2" parent="." instance=ExtResource("3_sc8gf")]
 position = Vector2(1071, -988)
 
+
 [node name="Gun3" parent="." instance=ExtResource("3_sc8gf")]
 position = Vector2(-1812, 169)
 
@@ -548,3 +551,9 @@ position = Vector2(1256, -2290)
 
 [node name="Gun5" parent="." instance=ExtResource("3_06aex")]
 position = Vector2(-218, -537)
+
+[node name="MachineGun" parent="." instance=ExtResource("7_psi5d")]
+position = Vector2(249, -614)
+
+[node name="MachineGun2" parent="." instance=ExtResource("7_psi5d")]
+position = Vector2(-1798, 179)

@@ -9,6 +9,7 @@ height = 16.0
 
 [node name="Bullet" type="Area2D"]
 script = ExtResource("1_hs50h")
+speed = 2000
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 light_mask = 4
