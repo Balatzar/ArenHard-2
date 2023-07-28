@@ -128,4 +128,5 @@ func set_health(new_health):
 	$HealthBar.value = health
 
 func die():
-	queue_free()
+	global_position = get_parent().get_parent().get_node("Spawn").global_position
+	set_health(max_health)

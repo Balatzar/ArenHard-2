@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cobv12mivkn5h"]
+[gd_scene load_steps=13 format=3 uid="uid://cobv12mivkn5h"]
 
 [ext_resource type="Script" path="res://Third_arena/third_arena.gd" id="1_schpn"]
 [ext_resource type="Texture2D" uid="uid://cgft4lvx62vp" path="res://Assets/Tiles/tiles.png" id="2_l16yw"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c0cmtqfhoed65" path="res://Objects/Hazards/KillOrb.tscn" id="5_crqgp"]
 [ext_resource type="PackedScene" uid="uid://c6vleknr72bsi" path="res://Weapons/Gun/gun.tscn" id="6_4snbg"]
 [ext_resource type="PackedScene" uid="uid://b8h0w75xppuxt" path="res://Objects/StartWall/start_wall.tscn" id="7_6ea0j"]
+[ext_resource type="Texture2D" uid="uid://cb3gvmx88o81q" path="res://Assets/Arena/Hazards/Orb/orb_05.png" id="8_nk5f8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mwnj8"]
 texture = ExtResource("2_l16yw")
@@ -481,6 +482,15 @@ tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_mwnj8")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_80qkt"]
+radius = 61.131
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_rhi2s"]
+properties/0/path = NodePath("WinScreen:text")
+properties/0/spawn = true
+properties/0/sync = true
+properties/0/watch = false
+
 [node name="FirstArena" type="Node2D"]
 script = ExtResource("1_schpn")
 
@@ -542,4 +552,27 @@ offset_right = 198.0
 offset_bottom = 728.0
 text = "Start"
 
+[node name="WinScreen" type="Label" parent="."]
+offset_left = -778.0
+offset_top = 334.0
+offset_right = -598.0
+offset_bottom = 420.0
+theme_override_font_sizes/font_size = 60
+text = "00:00"
+
+[node name="Finish" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Finish"]
+modulate = Color(0.141176, 1, 0.807843, 1)
+position = Vector2(-699, 458)
+texture = ExtResource("8_nk5f8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
+position = Vector2(-696, 464)
+shape = SubResource("CircleShape2D_80qkt")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_rhi2s")
+
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="body_entered" from="Finish" to="." method="_on_finish_body_entered"]
