@@ -1,11 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://dikff1nmvdeyk"]
+[gd_scene load_steps=3 format=3 uid="uid://dk0kq1n6sw1yu"]
 
 [ext_resource type="Script" path="res://Mutiplayer Scene/multiplayer.gd" id="1_1infk"]
-[ext_resource type="PackedScene" uid="uid://bhvjgxcvxe25x" path="res://First Arena/first_arena.tscn" id="2_5y3uq"]
+[ext_resource type="PackedScene" uid="uid://cobv12mivkn5h" path="res://Third_arena/third_arena.tscn" id="2_cwfhw"]
 
 [node name="Multiplayer" type="Node"]
 script = ExtResource("1_1infk")
-main_scene = ExtResource("2_5y3uq")
+main_scene = ExtResource("2_cwfhw")
 
 [node name="Level" type="Node" parent="."]
 
