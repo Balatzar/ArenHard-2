@@ -76,6 +76,7 @@ func _physics_process(delta):
 		arms.animator.play("Fall")
 
 	move_and_slide()
+	
 
 func take_gun(weapon: String):
 	var res := "res://Characters/" + characterName + "/" + characterName + "Arm" + weapon.capitalize().replace(" ", "") + "/" + characterName.to_lower() + "_arm_" + weapon + ".tscn"
@@ -94,6 +95,8 @@ func flip(x_axis):
 	arms.scale.x = x_axis
 
 func hurt(damage: int):
+	velocity.y = -300
+	velocity.x = 200
 	set_health(health - damage)
 	if health <= 0:
 		die()
