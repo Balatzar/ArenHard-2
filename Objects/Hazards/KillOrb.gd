@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var animator = $Animator
-@export var damage := 100
+@export var damage := 10
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	animator.play('Idle')
