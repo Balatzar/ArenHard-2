@@ -1,5 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cobv12mivkn5h"]
 
+[ext_resource type="Script" path="res://First Arena/first_arena.gd" id="1_ck3fn"]
 [ext_resource type="Texture2D" uid="uid://cgft4lvx62vp" path="res://Assets/Tiles/tiles.png" id="2_okk1k"]
 [ext_resource type="PackedScene" uid="uid://c6vleknr72bsi" path="res://Weapons/Gun/gun.tscn" id="3_06aex"]
 [ext_resource type="Texture2D" uid="uid://82j0jfw18hpb" path="res://Assets/Arena/background2.webp" id="3_li2nt"]
@@ -481,6 +482,16 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_mwnj8")
 
 [node name="FirstArena" type="Node2D"]
+script = ExtResource("1_ck3fn")
+
+[node name="Players" type="Node2D" parent="."]
+
+[node name="Spawn" type="Marker2D" parent="."]
+position = Vector2(6, -2168)
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://Characters/Tricot1/tricot1.tscn", "res://Characters/Octoput/octoput.tscn")
+spawn_path = NodePath("../Players")
 
 [node name="ArenaTiles" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_87v62")

@@ -1,13 +1,10 @@
-extends Node2D
+extends RotatingObject
 
 class_name WeaponArm
 
 @export var Bullet : PackedScene
-@export var max_rotation_up = -1
-@export var max_rotation_down = 1.8
-@export var cooldown = 1.00
+@export var cooldown := 1.00
 
-@onready var animator = $AnimationPlayer
 
 var shooting = false
 
@@ -17,26 +14,15 @@ func kind():
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	animator.play("Idle")
+	rotate = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	var mouse_pos = get_global_mouse_position()
-	# look_at(mouse_pos)
-	
-	var angle = atan2(mouse_pos.y - global_position.y, mouse_pos.x - global_position.x)
-	
-	rotation = angle
-	
-	if angle > max_rotation_up && angle < max_rotation_down:
-		scale.y = 1
-		get_parent().flip(1)
-	else:
-		scale.y = -1
-		get_parent().flip(-1)
-	
-	if Input.is_action_just_pressed("shoot"):
+	super(delta)
+	if get_parent().input.just_shooted:
 		shoot()
+		get_parent().input.just_shooted = false
 
 func shoot():
 	if shooting:

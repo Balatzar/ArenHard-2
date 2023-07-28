@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cblnn4nwym6so"]
+[gd_scene load_steps=6 format=3 uid="uid://c3fgg4hk6726u"]
 
 [ext_resource type="Texture2D" uid="uid://82j0jfw18hpb" path="res://Assets/Arena/background2.webp" id="3_8lro1"]
 [ext_resource type="PackedScene" uid="uid://c6vleknr72bsi" path="res://Weapons/Gun/gun.tscn" id="3_it8c7"]
@@ -50,7 +50,7 @@ scale = Vector2(0.794286, 0.794286)
 texture = ExtResource("4_u34b7")
 
 [node name="Tricot1" parent="." instance=ExtResource("6_0trx1")]
-position = Vector2(322, -1799)
+position = Vector2(264, -347)
 SPEED = 800.0
 JUMP_VELOCITY = -900
 JUMP_HOLD_VELOCITY = 100.0
