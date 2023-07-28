@@ -58,4 +58,3 @@ shoot={
 [rendering]
 
 renderer/rendering_method="mobile"
-anti_aliasing/quality/use_taa=true
