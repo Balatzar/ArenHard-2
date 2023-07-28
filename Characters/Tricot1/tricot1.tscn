@@ -76,8 +76,10 @@ properties/1/watch = false
 
 [node name="Tricot1" type="CharacterBody2D" groups=["Players"]]
 script = ExtResource("1_q8ajm")
-JUMP_VELOCITY = -835
-JUMP_HOLD_VELOCITY = 50.0
+JUMP_VELOCITY = -1200
+JUMP_HOLD_VELOCITY = 80.0
+FRICTION = 0.154
+ACCELERATION = 0.259
 Arms = ExtResource("2_af2hn")
 characterName = "Tricot1"
 

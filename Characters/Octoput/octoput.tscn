@@ -68,6 +68,7 @@ properties/1/watch = false
 
 [node name="Octoput" type="CharacterBody2D" groups=["Players"]]
 script = ExtResource("1_phwdg")
+JUMP_VELOCITY = -900
 Arms = ExtResource("8_o5sm8")
 characterName = "Octoput"
 
