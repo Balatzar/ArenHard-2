@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cobv12mivkn5h"]
+[gd_scene load_steps=10 format=3 uid="uid://cobv12mivkn5h"]
 
 [ext_resource type="Script" path="res://Third_arena/third_arena.gd" id="1_schpn"]
 [ext_resource type="Texture2D" uid="uid://cgft4lvx62vp" path="res://Assets/Tiles/tiles.png" id="2_l16yw"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://eg042sdk115d" path="res://Assets/Arena/foreground.webp" id="4_60lbj"]
 [ext_resource type="PackedScene" uid="uid://c0cmtqfhoed65" path="res://Objects/Hazards/KillOrb.tscn" id="5_crqgp"]
 [ext_resource type="PackedScene" uid="uid://c6vleknr72bsi" path="res://Weapons/Gun/gun.tscn" id="6_4snbg"]
+[ext_resource type="PackedScene" uid="uid://b8h0w75xppuxt" path="res://Objects/StartWall/start_wall.tscn" id="7_6ea0j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mwnj8"]
 texture = ExtResource("2_l16yw")
@@ -530,3 +531,15 @@ position = Vector2(2321, 889)
 
 [node name="Gun" parent="." instance=ExtResource("6_4snbg")]
 position = Vector2(-2391, -1960)
+
+[node name="StartWall" parent="." instance=ExtResource("7_6ea0j")]
+position = Vector2(62, 852)
+
+[node name="Start" type="Button" parent="."]
+offset_left = 190.0
+offset_top = 720.0
+offset_right = 198.0
+offset_bottom = 728.0
+text = "Start"
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]

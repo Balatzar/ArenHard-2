@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8h0w75xppuxt"]
+
+[ext_resource type="Script" path="res://Objects/StartWall/start_wall.gd" id="1_r0llh"]
+[ext_resource type="Texture2D" uid="uid://b1so8ysg7r6qm" path="res://Assets/Arena/block.png" id="1_wc4jg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mjje3"]
+size = Vector2(81, 191)
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_5yukc"]
+properties/0/path = NodePath("Sprite2D:visible")
+properties/0/spawn = true
+properties/0/sync = true
+properties/0/watch = false
+properties/1/path = NodePath("CollisionShape2D:disabled")
+properties/1/spawn = true
+properties/1/sync = true
+properties/1/watch = false
+
+[node name="StartWall" type="StaticBody2D"]
+script = ExtResource("1_r0llh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wc4jg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_mjje3")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_5yukc")

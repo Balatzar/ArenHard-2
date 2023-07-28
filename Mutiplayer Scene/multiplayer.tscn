@@ -10,7 +10,7 @@ main_scene = ExtResource("2_cwfhw")
 [node name="Level" type="Node" parent="."]
 
 [node name="LevelSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://Test Zone/test_spawn.tscn", "res://First Arena/first_arena.tscn")
+_spawnable_scenes = PackedStringArray("res://Third_arena/third_arena.tscn")
 spawn_path = NodePath("../Level")
 spawn_limit = 1
 
