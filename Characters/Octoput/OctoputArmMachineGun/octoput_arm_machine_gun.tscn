@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://1xu0rx2bfcy6"]
+[gd_scene load_steps=18 format=3 uid="uid://1xu0rx2bfcy6"]
 
 [ext_resource type="Script" path="res://Characters/Octoput/OctoputArmMachineGun/octoput_arm_machine_gun.gd" id="1_x08t4"]
 [ext_resource type="PackedScene" uid="uid://buncutx63xmxk" path="res://Weapons/Bullet/bullet.tscn" id="2_bjypn"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://c70rdytuw8x1x" path="res://Assets/Characters/OCTOPUT/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_06.png" id="8_sk5m8"]
 [ext_resource type="Texture2D" uid="uid://dj8bdga3ljugq" path="res://Assets/Characters/OCTOPUT/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_07.png" id="9_4ot7b"]
 [ext_resource type="Texture2D" uid="uid://df4gtc11rgfw3" path="res://Assets/Characters/OCTOPUT/WEAPONS/MACHINE GUN/MG SHOOT/MG_shoot_08.png" id="10_herfk"]
+[ext_resource type="AudioStream" uid="uid://qm1p4tktjjyo" path="res://Assets/Sounds/BRRRRT.mp3" id="12_0q7ar"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_26qp0"]
 animations = [{
@@ -134,6 +135,7 @@ _data = {
 [node name="ArmMachineGun" type="Node2D"]
 script = ExtResource("1_x08t4")
 Bullet = ExtResource("2_bjypn")
+cooldown = 0.08
 
 [node name="Animator" type="AnimatedSprite2D" parent="."]
 position = Vector2(2.08165e-12, 2.08165e-12)
@@ -147,3 +149,6 @@ libraries = {
 
 [node name="Muzzle" type="Marker2D" parent="."]
 position = Vector2(76, 10)
+
+[node name="WeaponShot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_0q7ar")
