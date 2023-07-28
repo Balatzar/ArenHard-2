@@ -1,12 +1,12 @@
 extends Node2D
 
+class_name MultiplayerLevel
+
 var characters := [
 	preload("res://Characters/Tricot1/tricot1.tscn"),
 	preload("res://Characters/Octoput/octoput.tscn")
 ]
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	if not multiplayer.is_server():
 		return
