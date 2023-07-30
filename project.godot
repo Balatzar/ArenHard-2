@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ArenHard 2"
-run/main_scene="res://Mutiplayer Scene/multiplayer.tscn"
+run/main_scene="res://Second Arena/second_arena.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
 

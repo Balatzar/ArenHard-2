@@ -12,6 +12,7 @@ class_name Character
 @export var characterName : String
 @export var max_health := 100
 
+
 @export var player := 1 :
 	set(id):
 		player = id
@@ -19,6 +20,7 @@ class_name Character
 @onready var animator = $Body
 @onready var health = max_health
 @onready var input = $PlayerInput
+var originalColor
 
 func _enter_tree():
 	$PlayerInput.set_multiplayer_authority(str(name).to_int())
@@ -118,7 +120,14 @@ func flip(x_axis):
 
 func hurt(damage: int):
 	velocity.y = -300
-	velocity.x = 200
+	
+	originalColor = animator.modulate
+	animator.modulate = Color(1, .5, .5)
+	
+	# Start the timer
+	await get_tree().create_timer(0.5).timeout
+	animator.modulate = Color(1, 1, 1)
+	
 	set_health(health - damage)
 	if health <= 0:
 		die()
@@ -130,3 +139,4 @@ func set_health(new_health):
 func die():
 	global_position = get_parent().get_parent().get_node("Spawn").global_position
 	set_health(max_health)
+

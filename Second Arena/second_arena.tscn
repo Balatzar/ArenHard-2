@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dfsqxfygypkwj"]
+[gd_scene load_steps=10 format=3 uid="uid://dfsqxfygypkwj"]
 
 [ext_resource type="Script" path="res://Third_arena/third_arena.gd" id="1_chpxo"]
 [ext_resource type="Texture2D" uid="uid://cgft4lvx62vp" path="res://Assets/Tiles/tiles.png" id="2_2dn7b"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://eg042sdk115d" path="res://Assets/Arena/foreground.webp" id="4_k2pk0"]
 [ext_resource type="PackedScene" uid="uid://c0cmtqfhoed65" path="res://Objects/Hazards/KillOrb.tscn" id="5_ii6mj"]
 [ext_resource type="PackedScene" uid="uid://c6vleknr72bsi" path="res://Weapons/Gun/gun.tscn" id="6_op5oi"]
+[ext_resource type="PackedScene" uid="uid://5rsryhm5k32w" path="res://Weapons/MachineGun/machine_gun.tscn" id="7_s7lae"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mwnj8"]
 texture = ExtResource("2_2dn7b")
@@ -590,3 +591,12 @@ position = Vector2(-1776, -1765)
 
 [node name="Gun4" parent="." instance=ExtResource("6_op5oi")]
 position = Vector2(1256, -2290)
+
+[node name="MachineGun" parent="." instance=ExtResource("7_s7lae")]
+position = Vector2(494, -56)
+
+[node name="MachineGun2" parent="." instance=ExtResource("7_s7lae")]
+position = Vector2(-1095, -4)
+
+[node name="MachineGun3" parent="." instance=ExtResource("7_s7lae")]
+position = Vector2(-6, -1075)
